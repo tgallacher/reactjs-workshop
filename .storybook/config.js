@@ -7,7 +7,7 @@ const req = require.context('../src', true, /story\.jsx$/);
 
 addDecorator(
   withOptions({
-    theme: themes.dark,
+    // theme: themes.dark,
     url: '#',
     /**
      * regex for finding the hierarchy separator
