@@ -14,7 +14,7 @@ import DataTableRow from './DataTableRow';
 //  status_since: number,
 // }
 const DataTable = ({ rowData = [] }) => (
-  <section className="max-w-3xl mx-auto">
+  <section className="max-w-4xl mx-auto">
     <DataTableHeading />
 
     {rowData.map(data => (
