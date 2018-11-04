@@ -14,12 +14,13 @@ import DataTableRow from './DataTableRow';
 //  status_since: number,
 // }
 const DataTable = ({ rowData = [] }) => (
-  <React.Fragment>
+  <section className="max-w-3xl mx-auto">
     <DataTableHeading />
+
     {rowData.map(data => (
       <DataTableRow key={`${data.name}-${data.team}`} {...data} />
     ))}
-  </React.Fragment>
+  </section>
 );
 
 export { default as DataTableHeading } from './DataTableHeading';
