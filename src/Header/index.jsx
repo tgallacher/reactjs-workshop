@@ -52,7 +52,7 @@ const sortOptions = [
 
 const Header = ({ options }) => {
   return (
-    <Wrapper className="bg-grey-lightest font-sans">
+    <Wrapper className="bg-grey-lighter font-sans pt-4 pb-1">
       <ContentWrapper className="flex flex-wrap max-w-3xl mx-auto items-center">
         <FilterRowWrapper className="flex w-full py-2 items-center">
           <FilterInputColumn className="flex-grow w-4/5">
