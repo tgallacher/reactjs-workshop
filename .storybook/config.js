@@ -9,6 +9,16 @@ addDecorator(
   withOptions({
     theme: themes.dark,
     url: '#',
+    /**
+     * regex for finding the hierarchy separator
+     * @example:
+     *   null - turn off hierarchy
+     *   /\// - split by `/`
+     *   /\./ - split by `.`
+     *   /\/|\./ - split by `/` or `.`
+     * @type {Regex}
+     */
+    hierarchySeparator: /\//,
   })
 );
 
