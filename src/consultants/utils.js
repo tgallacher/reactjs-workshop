@@ -1,3 +1,4 @@
+import moment from 'moment';
 
 /**
  * Normalise raw data into format/shape expected inside app.
@@ -14,7 +15,11 @@ export const transformConsultantNode = ({
   friendly_name,
   team
 }) => ({
-  status_since: activity_changed_at,
+  status_since: moment()
+    .subtract(Math.floor(Math.random() * 2), 'hours')
+    .subtract(Math.floor(Math.random() * 59), 'minutes')
+    .subtract(Math.floor(Math.random() * 59), 'seconds')
+    .unix(),
   functions,
   username,
   sources: Array.isArray(sources)
@@ -26,7 +31,30 @@ export const transformConsultantNode = ({
         'consultant': 'Internal'
       }[source]))
     : [],
-  status: activity,
+  status: [
+    'Break',
+    'Call Work',
+    'Comfort Break',
+    'Gone Home',
+    'Ready',
+    'Ready',
+    'Ready',
+    'Ready',
+    'Lunch',
+    'On Call',
+    'Manual Dial',
+    'On Call',
+    'Meeting',
+    'On Call',
+    'Ready',
+    'On Wrap',
+    'Ready',
+    'On Call',
+    'Ready',
+    'On Call',
+    'Ready',
+    'Training / Coaching',
+  ][Math.floor(Math.random() * 21)],
   name: friendly_name,
   team,
 });
