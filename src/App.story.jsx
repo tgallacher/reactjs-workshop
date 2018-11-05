@@ -1,9 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import AppBar from './AppBar';
-import Header from './Header';
-import DataTable from './DataTable';
+import App from './scenes';
 import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,
@@ -90,9 +88,5 @@ const data = [
 
 storiesOf('App', module)
   .add('App', () => (
-    <React.Fragment>
-      <AppBar />
-      <Header />
-      <DataTable rowData={data} />
-    </React.Fragment>
+    <App data={data} />
   ));
