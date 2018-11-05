@@ -6,11 +6,17 @@ export const defaultState = {
     sources: [],
     functions: [],
   },
-  sortBy: null
+  sortBy: null,
+  filterBy: {
+    teams: null,
+    sources: null,
+    functions: null,
+  },
 };
 
 // Action Constants
 export const UI_UPDATE_SORT_BY = 'ui.sort.by.update';
+export const UI_UPDATE_FILTER_BY = 'ui.filter.by.update';
 
 // Action Creators
 
@@ -18,6 +24,13 @@ export const updateSortBy = sortBy => ({
   type: UI_UPDATE_SORT_BY,
   payload: {
     sortBy,
+  },
+});
+
+export const updateFilterBy = filterData => ({
+  type: UI_UPDATE_FILTER_BY,
+  payload: {
+    data: filterData,
   },
 });
 
@@ -45,8 +58,9 @@ export default (prevState = defaultState, action) => {
           functions: [...new Set(
             action.payload.data.reduce((functions, consultant) => functions.concat(consultant.functions), [])
           )],
-        }
-      }
+        },
+      };
+
     case UI_UPDATE_SORT_BY:
       return Object.assign(
         prevState,
@@ -54,6 +68,15 @@ export default (prevState = defaultState, action) => {
           sortBy: action.payload.sortBy,
         },
       );
+
+    case UI_UPDATE_FILTER_BY:
+        return Object.assign(prevState, {
+          filterBy: {
+            teams: action.payload.data.filter(o => /team@/.test(o.value)).map(o => o.label),
+            sources: action.payload.data.filter(o => /source@/.test(o.value)).map(o => o.label),
+            functions: action.payload.data.filter(o => /function@/.test(o.value)).map(o => o.label),
+          },
+        });
 
     default:
       return prevState;
