@@ -12,6 +12,7 @@ import {
 } from '../../../consultants/selectors';
 import {
   getFilters,
+  makeGetFilterBy,
 } from '../../../ui/selectors';
 import {
   updateFilterBy,
@@ -64,9 +65,8 @@ const sortOptions = [
 
 class Header extends React.Component {
 
-  // values: array[{label, value}] -- current value(s) of select
-  // event: {action, option: {label, value}} - Option added/removed
-  handleFilterChange = (values, event) => {
+  // values: {label, value}[] -- current value(s) of select
+  handleFilterChange = (values) => {
     this.props.dispatch(updateFilterBy(values));
   }
 
@@ -75,6 +75,7 @@ class Header extends React.Component {
       numConsultantsUnavailable,
       numConsultantsAvailable,
       numConsultantsBusy,
+      getSelectedFilters,
       options,
     } = this.props;
 
@@ -83,6 +84,13 @@ class Header extends React.Component {
       { label: 'Source', options: options.sources.map(generateOptionEntry('source')) },
       { label: 'Functions', options: options.functions.map(generateOptionEntry('function')) },
     ];
+
+    const selectedValues = [].concat(
+      getSelectedFilters('teams').map(generateOptionEntry('team')),
+      getSelectedFilters('functions').map(generateOptionEntry('function')),
+      getSelectedFilters('sources').map(generateOptionEntry('source')),
+    );
+
 
     return (
       <Wrapper className="bg-grey-lighter font-sans pt-4 pb-1">
@@ -100,6 +108,7 @@ class Header extends React.Component {
                 onChange={this.handleFilterChange}
                 options={groupOptions}
                 isMulti
+                value={selectedValues}
                 theme={(theme) => ({
                   ...theme,
                   borderRadius: 0,
@@ -147,6 +156,7 @@ const mapStateToProps = state => ({
   numConsultantsUnavailable: getNumberOfConsultantsInUnavailableState(state),
   numConsultantsAvailable: getNumberOfConsultantsInAvailableState(state),
   numConsultantsBusy: getNumberOfConsultantsInBusyState(state),
+  getSelectedFilters: makeGetFilterBy(state),
   options: getFilters(state),
 })
 
