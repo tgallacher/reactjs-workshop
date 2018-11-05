@@ -29,15 +29,15 @@ DataTableRowStories
   .add('Available (long status time)', () => (
     <DataTableRow
       name='John Doe'
-      team= 'Apollo'
+      team= 'Alpha'
       sources={[
-        'Inbound',
-        'Internal',
+        'Referrals',
+        'Campaign',
       ]}
       functions={[
         'Renewals',
-        'Sales',
-        'Tc Sales',
+        'Primary Sales',
+        'Secondary Sales',
       ]}
       status={STATUS_STATE_AVAILABLE}
       status_since={1537786989.1483066}
@@ -46,15 +46,15 @@ DataTableRowStories
   .add('Available', () => (
     <DataTableRow
       name='John Doe'
-      team= 'Apollo'
+      team= 'Beta'
       sources={[
-        'Inbound',
-        'Internal',
+        'Referrals',
+        'Campaign',
       ]}
       functions={[
         'Renewals',
-        'Sales',
-        'Tc Sales',
+        'Primary Sales',
+        'Secondary Sales',
       ]}
       status={STATUS_STATE_AVAILABLE}
     />
@@ -62,14 +62,14 @@ DataTableRowStories
   .add('Unavailable', () => (
     <DataTableRow
       name='Jane Smith'
-      team= 'Aphrodite'
+      team= 'Alpha'
       sources={[
-        'Outbound',
-        'Internal',
+        'Cold Call',
+        'Campaign',
       ]}
       functions={[
-        'Sales',
-        'Tc Sales',
+        'Primary Sales',
+        'Secondary Sales',
       ]}
       status={STATUS_STATE_UNAVAILABLE}
     />
@@ -77,12 +77,12 @@ DataTableRowStories
   .add('Busy', () => (
     <DataTableRow
       name='Alice Bob'
-      team= 'Achillies'
+      team= 'Gamma'
       sources={[
-        'Internal',
+        'Campaign',
       ]}
       functions={[
-        'Sales',
+        'Primary Sales',
       ]}
       status="Meeting"
     />
@@ -94,77 +94,77 @@ DataTableStories
     const data = [
       {
         name: 'Alice Bob',
-        team:  'Achillies',
+        team:  'Beta',
         sources: [
-          'Internal',
+          'Campaign',
         ],
         functions: [
-          'Sales',
+          'Primary Sales',
         ],
         status: "Meeting",
       },
       {
         name: 'Jane Smith',
-        team:  'Aphrodite',
+        team:  'Beta',
         sources: [
-          'Outbound',
-          'Internal',
+          'Cold Call',
+          'Campaign',
         ],
         functions: [
-          'Sales',
-          'Tc Sales',
+          'Primary Sales',
+          'Secondary Sales',
         ],
         status: STATUS_STATE_UNAVAILABLE,
       },
       {
         name: 'John Doe',
-        team:  'Apollo',
+        team:  'Beta',
         sources: [
-          'Inbound',
-          'Internal',
+          'Referrals',
+          'Campaign',
         ],
         functions: [
-          'Tc Sales',
+          'Secondary Sales',
           'Renewals',
-          'Sales',
+          'Primary Sales',
         ],
         status: STATUS_STATE_AVAILABLE,
       },
       {
         name: 'Alice Bob',
-        team:  'Achillies',
+        team:  'Gamma',
         sources: [
-          'Internal',
+          'Campaign',
         ],
         functions: [
-          'Sales',
+          'Primary Sales',
         ],
         status: "Meeting",
       },
       {
         name: 'Jane Smith',
-        team:  'Aphrodite',
+        team:  'Alpha',
         sources: [
-          'Outbound',
-          'Internal',
+          'Cold Call',
+          'Campaign',
         ],
         functions: [
-          'Sales',
-          'Tc Sales',
+          'Primary Sales',
+          'Secondary Sales',
         ],
         status: STATUS_STATE_UNAVAILABLE,
       },
       {
         name: 'John Doe',
-        team:  'Apollo',
+        team:  'Beta',
         sources: [
-          'Inbound',
-          'Internal',
+          'Referrals',
+          'Campaign',
         ],
         functions: [
-          'Tc Sales',
+          'Secondary Sales',
           'Renewals',
-          'Sales',
+          'Primary Sales',
         ],
         status: STATUS_STATE_AVAILABLE,
       }

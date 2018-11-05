@@ -1,8 +1,8 @@
 import React from 'react';
 
-import AppBar from '../AppBar';
-import Header from '../Header';
-import DataTable from '../DataTable';
+import AppBar from './components/AppBar';
+import Header from './components/Header';
+import DataTable from './components/DataTable';
 
 const App = ({ data = []}) => (
   <React.Fragment>
