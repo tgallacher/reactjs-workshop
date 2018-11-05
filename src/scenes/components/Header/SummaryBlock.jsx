@@ -5,7 +5,7 @@ import {
   isStatusUnavailable,
   isStatusAvailable,
   isStatusBusy,
-} from '../utils/status';
+} from '../../../utils/status';
 
 const IconWrapper = styled('div')`
   max-width: 100px;

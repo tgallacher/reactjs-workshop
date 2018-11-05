@@ -8,7 +8,7 @@ import DataTable, {
 import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,
-} from '../utils/status';
+} from '../../../utils/status';
 
 
 const DataTableStories = storiesOf('DataTable', module);

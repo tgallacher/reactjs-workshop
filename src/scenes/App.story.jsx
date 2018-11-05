@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import App from './scenes';
+import App from './';
 import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,
-} from './utils/status';
+} from '../utils/status';
 
 const data = [
   {
