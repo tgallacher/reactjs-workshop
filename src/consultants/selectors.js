@@ -14,21 +14,6 @@ import {
 
 const getRootSliceFromStore = state => state.consultants;
 
-export const getNumberOfConsultantsInAvailableState = createSelector(
-  getRootSliceFromStore,
-  (consultants = []) => consultants.filter(consultant => isStatusAvailable(consultant.status)).length,
-);
-
-export const getNumberOfConsultantsInUnavailableState = createSelector(
-  getRootSliceFromStore,
-  (consultants = []) => consultants.filter(consultant => isStatusUnavailable(consultant.status)).length,
-);
-
-export const getNumberOfConsultantsInBusyState = createSelector(
-  getRootSliceFromStore,
-  (consultants = []) => consultants.filter(consultant => isStatusBusy(consultant.status)).length,
-);
-
 export const getConsultants = createSelector(
   getRootSliceFromStore,
   makeGetFilterBy,
@@ -53,4 +38,19 @@ export const getConsultants = createSelector(
 
     return sortConsultantsAlphabeticallyByNode(filteredConsultants, 'team');
   },
+);
+
+export const getNumberOfConsultantsInAvailableState = createSelector(
+  getConsultants,
+  (consultants = []) => consultants.filter(consultant => isStatusAvailable(consultant.status)).length,
+);
+
+export const getNumberOfConsultantsInUnavailableState = createSelector(
+  getConsultants,
+  (consultants = []) => consultants.filter(consultant => isStatusUnavailable(consultant.status)).length,
+);
+
+export const getNumberOfConsultantsInBusyState = createSelector(
+  getConsultants,
+  (consultants = []) => consultants.filter(consultant => isStatusBusy(consultant.status)).length,
 );
