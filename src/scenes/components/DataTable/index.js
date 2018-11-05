@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import { getConsultants } from '../../../consultants/selectors';
 import DataTableHeading from './DataTableHeading';
 import DataTableRow from './DataTableRow';
 
@@ -28,7 +29,7 @@ const DataTable = ({ rowData = [] }) => (
 );
 
 const mapStateToProps = state => ({
-  rowData: state,
+  rowData: getConsultants(state),
 })
 
 export default connect(mapStateToProps)(DataTable);

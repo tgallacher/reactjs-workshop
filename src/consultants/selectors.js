@@ -21,3 +21,8 @@ export const getNumberOfConsultantsInBusyState = createSelector(
   state => state,
   (consultants = []) => consultants.filter(consultant => isStatusBusy(consultant.status)).length,
 );
+
+export const getConsultants = createSelector(
+  state => state,
+  (consultants = []) => consultants,
+);
