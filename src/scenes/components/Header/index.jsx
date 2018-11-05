@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'react-emotion';
 import Select, { components } from 'react-select';
+import { connect } from 'react-redux';
 
 import SummaryIconBlock from './SummaryBlock';
+import {
+  getNumberOfConsultantsInUnavailableState,
+  getNumberOfConsultantsInAvailableState,
+  getNumberOfConsultantsInBusyState,
+} from '../../../consultants/selectors';
 
 const Wrapper = styled('section')``;
 const ContentWrapper = styled('div')``;
@@ -50,7 +56,12 @@ const sortOptions = [
   { label: 'Status', value: 'status' },
 ]
 
-const Header = ({ options }) => {
+const Header = ({
+  numConsultantsUnavailable,
+  numConsultantsAvailable,
+  numConsultantsBusy,
+  options,
+}) => {
   return (
     <Wrapper className="bg-grey-lighter font-sans pt-4 pb-1">
       <ContentWrapper className="flex flex-wrap max-w-4xl mx-auto items-center">
@@ -97,9 +108,9 @@ const Header = ({ options }) => {
         <SummaryRowWrapper className="flex w-full py-2 items-center">
           <div id="summary-wrapper" className="flex-grow w-4/5" style={{marginRight: '22%'}}>
               <div id="summary-content" className="flex justify-between w-4/5 ml-auto mr-10">
-                <SummaryIconBlock stat="45" status="Ready" />
-                <SummaryIconBlock stat="16" status="On Call" />
-                <SummaryIconBlock stat="75" status="Meeting" />
+                <SummaryIconBlock stat={numConsultantsAvailable} status="Ready" />
+                <SummaryIconBlock stat={numConsultantsBusy} status="On Call" />
+                <SummaryIconBlock stat={numConsultantsUnavailable} status="Meeting" />
               </div>
           </div>
         </SummaryRowWrapper>
@@ -108,5 +119,10 @@ const Header = ({ options }) => {
   );
 };
 
+const mapStateToProps = state => ({
+  numConsultantsAvailable: getNumberOfConsultantsInAvailableState(state),
+  numConsultantsUnavailable: getNumberOfConsultantsInUnavailableState(state),
+  numConsultantsBusy: getNumberOfConsultantsInBusyState(state),
+})
 
-export default Header;
+export default connect(mapStateToProps)(Header);
