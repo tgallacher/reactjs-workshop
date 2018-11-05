@@ -68,7 +68,7 @@ export const DataTableRow = ({
       {Array.isArray(functions)
         ? functions.length > 0
           ? sortArrayAlphabetically(functions).join(', ')
-          : 'No functions'
+          : '-'
         : functions
       }
     </FunctionsCol>
@@ -77,7 +77,7 @@ export const DataTableRow = ({
       {Array.isArray(sources)
         ? sources.length > 0
           ? sortArrayAlphabetically(sources).join(', ')
-          : 'No sources'
+          : '-'
         : sources
       }
     </SourcesCol>
