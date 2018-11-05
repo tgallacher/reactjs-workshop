@@ -1,4 +1,10 @@
-import { race, call, put, all, take } from 'redux-saga/effects';
+import {
+  race,
+  take,
+  call,
+  put,
+  all,
+} from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 
 import {
@@ -36,14 +42,13 @@ const fetchConsultantDataSaga = function*() {
           (consultantUsername, idx) => call(transformConsultantNode, rawData[consultantUsername], idx % Math.floor(numConsultants / randomisationFactor) === 0),
         ));
 
-
       shouldShuffle = ! shouldShuffle;
 
       yield put(consultantFetchComplete(data));
       yield call(delay, 8000);
     } catch (error) {
-      // return; // drop errors for now
       console.error(error);
+      return; // drop errors for now
     }
   }
 };
