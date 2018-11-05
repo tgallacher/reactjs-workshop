@@ -108,9 +108,9 @@ const Header = ({
         <SummaryRowWrapper className="flex w-full py-2 items-center">
           <div id="summary-wrapper" className="flex-grow w-4/5" style={{marginRight: '22%'}}>
               <div id="summary-content" className="flex justify-between w-4/5 ml-auto mr-10">
-                <SummaryIconBlock stat={numConsultantsAvailable} status="Ready" />
-                <SummaryIconBlock stat={numConsultantsBusy} status="On Call" />
-                <SummaryIconBlock stat={numConsultantsUnavailable} status="Meeting" />
+                <SummaryIconBlock stat={numConsultantsAvailable} status="available" />
+                <SummaryIconBlock stat={numConsultantsBusy} status="busy" />
+                <SummaryIconBlock stat={numConsultantsUnavailable} status="unavailable" />
               </div>
           </div>
         </SummaryRowWrapper>
