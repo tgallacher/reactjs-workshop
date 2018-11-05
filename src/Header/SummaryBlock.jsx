@@ -1,21 +1,27 @@
 import React from 'react';
 import styled, { cx } from 'react-emotion';
 
+import {
+  isStatusUnavailable,
+  isStatusAvailable,
+  isStatusBusy,
+} from '../utils/status';
+
 const IconWrapper = styled('div')`
   max-width: 100px;
 `;
 
-// Consulstant status: 'available' | 'busy' | 'unavailable'
-const SummaryBlock = ({ status = 'available', stat = 0 }) => (
+// Status: @see src/utils/status.js
+const SummaryBlock = ({ status = 'Ready', stat = 0 }) => (
   <IconWrapper
     className={cx(
       'flex',
       'items-center',
       'text-center',
       {
-        'text-green-dark': status === 'available',
-        'text-orange-dark': status === 'unavailable',
-        'text-purple-dark': status === 'busy',
+        'text-green-dark': isStatusAvailable(status),
+        'text-orange-dark': isStatusUnavailable(status),
+        'text-purple-dark': isStatusBusy(status),
       }
     )}
   >
@@ -32,16 +38,21 @@ const SummaryBlock = ({ status = 'available', stat = 0 }) => (
             'p-0',
             'm-0',
             {
-              'far fa-user': status === 'available',
-              'fas fa-user-slash': status === 'unavailable',
-              'fas fa-user': status === 'busy',
+              'far fa-user': isStatusAvailable(status),
+              'fas fa-user-slash': isStatusUnavailable(status),
+              'fas fa-user': isStatusBusy(status),
             }
           )}
         />
       </div>
       <div id="text w-full">
         <span className="text-xs p-0 m-0">
-          {status.charAt(0).toUpperCase() + status.substr(1)}
+          {isStatusBusy(status)
+            ? 'Busy'
+            : isStatusUnavailable(status)
+              ? 'Unavailable'
+              : status.charAt(0).toUpperCase() + status.substr(1).toLocaleLowerCase()
+          }
         </span>
       </div>
     </div>
