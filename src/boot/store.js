@@ -4,7 +4,6 @@ import {
   compose,
 } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import logger from 'redux-logger';
 
 import rootReducer from '../consultants/ducks';
 import rootSaga from '../consultants/sagas';
@@ -21,10 +20,6 @@ if (! false) {
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     : compose;
 }
-
-// if (ADD_DEV_TOOLS_IN_PROD) {
-  middleware.push(logger);
-// }
 
 const enhancers = applyMiddleware(
   ...middleware,
