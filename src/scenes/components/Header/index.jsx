@@ -4,11 +4,15 @@ import Select, { components } from 'react-select';
 import { connect } from 'react-redux';
 
 import SummaryIconBlock from './SummaryBlock';
+import { generateOptionEntry } from './utils';
 import {
   getNumberOfConsultantsInUnavailableState,
   getNumberOfConsultantsInAvailableState,
   getNumberOfConsultantsInBusyState,
 } from '../../../consultants/selectors';
+import {
+  getFilters,
+} from '../../../ui/selectors';
 
 const Wrapper = styled('section')``;
 const ContentWrapper = styled('div')``;
@@ -43,7 +47,6 @@ const MultiValueLabel = ({ children, ...props }) => {
         ? 'Function: '
         : '';
 
-
   return (
     <components.MultiValueLabel {...props}>
      {prefix}{children}
@@ -56,73 +59,92 @@ const sortOptions = [
   { label: 'Status', value: 'status' },
 ]
 
-const Header = ({
-  numConsultantsUnavailable,
-  numConsultantsAvailable,
-  numConsultantsBusy,
-  options,
-}) => {
-  return (
-    <Wrapper className="bg-grey-lighter font-sans pt-4 pb-1">
-      <ContentWrapper className="flex flex-wrap max-w-4xl mx-auto items-center">
-        <FilterRowWrapper className="flex w-full py-2 items-center">
-          <FilterInputColumn className="flex-grow w-4/5">
-            <Select
-              onSelectResetsInput={false}
-              closeMenuOnSelect={false}
-              formatGroupLabel={formatGroupLabel}
-              placeholder="Select filter(s)..."
-              isClearable
-              components={{ MultiValueLabel }}
-              className="w-4/5 ml-auto mr-10"
-              options={options}
-              isMulti
-              theme={(theme) => ({
-                ...theme,
-                borderRadius: 0,
-              })}
-            />
-          </FilterInputColumn>
+class Header extends React.Component {
 
-          <SortbyInputColumn className="flex-grow w-1/5">
-            <Select
-              placeholder="Sort by"
-              isClearable
-              className="w-1/2 ml-auto"
-              tabIndex="1"
-              styles={{
-                control: (propvided) => ({
-                  ...propvided,
-                  backgroundColor: '#f3f3f3',
-                }),
-              }}
-              options={sortOptions}
-              theme={(theme) => ({
-                ...theme,
-                borderRadius: 0,
-              })}
-            />
-          </SortbyInputColumn>
-        </FilterRowWrapper>
+  // values: array[{label, value}] -- current value(s) of select
+  // event: {action, option: {label, value}} - Option added/removed
+  handleFilterChange = (values, event) => {
+    console.log('selected', values, event);
+  }
 
-        <SummaryRowWrapper className="flex w-full py-2 items-center">
-          <div id="summary-wrapper" className="flex-grow w-4/5" style={{marginRight: '22%'}}>
-              <div id="summary-content" className="flex justify-between w-4/5 ml-auto mr-10">
-                <SummaryIconBlock stat={numConsultantsAvailable} status="available" />
-                <SummaryIconBlock stat={numConsultantsBusy} status="busy" />
-                <SummaryIconBlock stat={numConsultantsUnavailable} status="unavailable" />
-              </div>
-          </div>
-        </SummaryRowWrapper>
-      </ContentWrapper>
-    </Wrapper>
-  );
-};
+  render() {
+    const {
+      numConsultantsUnavailable,
+      numConsultantsAvailable,
+      numConsultantsBusy,
+      options,
+    } = this.props;
+
+    const groupOptions = [
+      { label: 'Teams', options: options.teams.map(generateOptionEntry('team')) },
+      { label: 'Source', options: options.sources.map(generateOptionEntry('source')) },
+      { label: 'Functions', options: options.functions.map(generateOptionEntry('function')) },
+    ];
+
+    return (
+      <Wrapper className="bg-grey-lighter font-sans pt-4 pb-1">
+        <ContentWrapper className="flex flex-wrap max-w-4xl mx-auto items-center">
+          <FilterRowWrapper className="flex w-full py-2 items-center">
+            <FilterInputColumn className="flex-grow w-4/5">
+              <Select
+                onSelectResetsInput={false}
+                closeMenuOnSelect={false}
+                formatGroupLabel={formatGroupLabel}
+                placeholder="Select filter(s)..."
+                isClearable
+                components={{ MultiValueLabel }}
+                className="w-4/5 ml-auto mr-10"
+                onChange={this.handleFilterChange}
+                options={groupOptions}
+                isMulti
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 0,
+                })}
+              />
+            </FilterInputColumn>
+
+            <SortbyInputColumn className="flex-grow w-1/5">
+              <Select
+                placeholder="Sort by"
+                isClearable
+                className="w-1/2 ml-auto"
+                tabIndex="1"
+                styles={{
+                  control: (propvided) => ({
+                    ...propvided,
+                    backgroundColor: '#f3f3f3',
+                  }),
+                }}
+                options={sortOptions}
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 0,
+                })}
+              />
+            </SortbyInputColumn>
+          </FilterRowWrapper>
+
+          <SummaryRowWrapper className="flex w-full py-2 items-center">
+            <div id="summary-wrapper" className="flex-grow w-4/5" style={{marginRight: '22%'}}>
+                <div id="summary-content" className="flex justify-between w-4/5 ml-auto mr-10">
+                  <SummaryIconBlock stat={numConsultantsAvailable} status="available" />
+                  <SummaryIconBlock stat={numConsultantsBusy} status="busy" />
+                  <SummaryIconBlock stat={numConsultantsUnavailable} status="unavailable" />
+                </div>
+            </div>
+          </SummaryRowWrapper>
+        </ContentWrapper>
+      </Wrapper>
+    );
+  }
+}
 
 const mapStateToProps = state => ({
-  numConsultantsAvailable: getNumberOfConsultantsInAvailableState(state),
   numConsultantsUnavailable: getNumberOfConsultantsInUnavailableState(state),
+  numConsultantsAvailable: getNumberOfConsultantsInAvailableState(state),
   numConsultantsBusy: getNumberOfConsultantsInBusyState(state),
+  options: getFilters(state),
 })
 
 export default connect(mapStateToProps)(Header);
