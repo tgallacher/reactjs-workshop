@@ -6,6 +6,27 @@ import {
   isStatusBusy,
 } from '../utils/status';
 
+import { sortArrayAlphabetically } from '../utils/misc';
+
+const sortConsultantsByTeam = consultants => {
+  // Sorts alphabetical order
+  const sortedTeams = consultants.map(c => c.team).sort((a,b) => {
+    if (a < b) return -1;
+    if (a > b) return 1;
+
+    return 0;
+  });
+  const uniqTeams = [...(new Set(sortedTeams))];
+
+  return [].concat(
+    ...uniqTeams.map(
+      t => consultants.filter(
+        c => c.team === t
+      )
+    )
+  );
+}
+
 
 export const getNumberOfConsultantsInAvailableState = createSelector(
   state => state,
@@ -24,5 +45,7 @@ export const getNumberOfConsultantsInBusyState = createSelector(
 
 export const getConsultants = createSelector(
   state => state,
-  (consultants = []) => consultants,
+  (consultants = []) => {
+    return sortConsultantsByTeam(consultants);
+  },
 );
