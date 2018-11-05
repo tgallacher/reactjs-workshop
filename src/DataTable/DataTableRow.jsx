@@ -7,6 +7,7 @@ import {
   isStatusAvailable,
   isStatusBusy,
 } from '../utils/status';
+import { sortArrayAlphabetically } from '../utils/misc';
 import LiveTimeDifference from './LiveTimeDifference';
 
 const statusAvailableCss = css`
@@ -66,7 +67,7 @@ export const DataTableRow = ({
     <FunctionsCol className="flex-1">
       {Array.isArray(functions)
         ? functions.length > 0
-          ? functions.join(', ')
+          ? sortArrayAlphabetically(functions).join(', ')
           : 'No functions'
         : functions
       }
@@ -75,7 +76,7 @@ export const DataTableRow = ({
     <SourcesCol className="flex-1">
       {Array.isArray(sources)
         ? sources.length > 0
-          ? sources.join(', ')
+          ? sortArrayAlphabetically(sources).join(', ')
           : 'No sources'
         : sources
       }
