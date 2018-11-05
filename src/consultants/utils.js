@@ -72,3 +72,40 @@ export const transformConsultantNode = ({
     team,
   }
 };
+
+/**
+ * Generic helper to sort consultant data in a given order, based
+ * on a chosen node/key name.
+ *
+ * @param {object[]} consultants consultant data
+ * @param {string} nodeName Valid node/key name inside consultant object
+ * @see transformConsultantNode()
+ */
+export const sortConsultantsAlphabeticallyByNode = (consultants = [], nodeName) => {
+  if (
+    ! Array.isArray(consultants)
+    || consultants.length == 0
+    // Assume if node in 1st element, it's in all of them
+    // This should be reasonable, as we transform data as it comes in.
+    || ! (nodeName in consultants[0])
+  ) {
+    return consultants;
+  }
+
+  // Sorts alphabetical order
+  const sortedNodeVals = consultants.map(c => c[nodeName]).sort((a,b) => {
+    if (a < b) return -1;
+    if (a > b) return 1;
+
+    return 0;
+  });
+  const uniqNodeVals = [...(new Set(sortedNodeVals))];
+
+  return [].concat(
+    ...uniqNodeVals.map(
+      t => consultants.filter(
+        c => c[nodeName] === t
+      )
+    )
+  );
+}
