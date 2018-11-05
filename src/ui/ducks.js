@@ -8,9 +8,9 @@ export const defaultState = {
   },
   sortBy: null,
   filterBy: {
-    teams: null,
-    sources: null,
-    functions: null,
+    teams: [],
+    sources: [],
+    functions: [],
   },
 };
 
@@ -62,21 +62,20 @@ export default (prevState = defaultState, action) => {
       };
 
     case UI_UPDATE_SORT_BY:
-      return Object.assign(
-        prevState,
-        {
-          sortBy: action.payload.sortBy,
-        },
-      );
+      return {
+        ...prevState,
+        sortBy: action.payload.sortBy,
+      };
 
     case UI_UPDATE_FILTER_BY:
-        return Object.assign(prevState, {
+        return {
+          ...prevState,
           filterBy: {
             teams: action.payload.data.filter(o => /team@/.test(o.value)).map(o => o.label),
             sources: action.payload.data.filter(o => /source@/.test(o.value)).map(o => o.label),
             functions: action.payload.data.filter(o => /function@/.test(o.value)).map(o => o.label),
           },
-        });
+        };
 
     default:
       return prevState;

@@ -1,4 +1,4 @@
-import { createSelector } from 'reselect';
+import { createSelector, defaultMemoize } from 'reselect';
 
 const getRootSliceFromStore = state => state.ui;
 
@@ -12,19 +12,11 @@ export const getFilters = createSelector(
   ui => ui.filters,
 );
 
-export const getTeamFilterOptions = createSelector(
-  getFilters,
-  filters => filters.teams,
-);
-
-export const getSourceFilterOptions = createSelector(
-  getFilters,
-  filters => filters.sources,
-);
-
-export const getFunctionFilterOptions = createSelector(
-  getFilters,
-  filters => filters.functions,
-);
-
-
+export const makeGetFilterBy = createSelector(
+  getRootSliceFromStore,
+  ui => defaultMemoize(
+    (filterType) => filterType in ui.filterBy
+      ? ui.filterBy[filterType]
+      : [],
+  )
+)
