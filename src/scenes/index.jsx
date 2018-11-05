@@ -1,15 +1,32 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import store from '../boot/store';
+import { startFetchCycle } from '../consultants/ducks';
 
 import AppBar from './components/AppBar';
 import Header from './components/Header';
 import DataTable from './components/DataTable';
 
-const App = ({ data = []}) => (
-  <React.Fragment>
-    <AppBar />
-    <Header />
-    <DataTable rowData={data} />
-  </React.Fragment>
-);
+class App extends React.Component{
+
+  componentDidMount() {
+    // Makes initial request
+    store.dispatch(startFetchCycle());
+  }
+
+  render() {
+    return (
+      <Provider store={store}>
+        <React.Fragment>
+          <AppBar />
+          <Header />
+          <DataTable />
+        </React.Fragment>
+      </Provider>
+    );
+  }
+}
+
 
 export default App;
