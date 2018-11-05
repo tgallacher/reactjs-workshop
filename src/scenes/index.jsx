@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 
 import store from '../boot/store';
-import { startFetchCycle } from '../consultants/ducks';
+import { startFetchCycle, stopFetchCycle } from '../consultants/ducks';
 
 import AppBar from './components/AppBar';
 import Header from './components/Header';
@@ -13,6 +13,10 @@ class App extends React.Component{
   componentDidMount() {
     // Makes initial request
     store.dispatch(startFetchCycle());
+  }
+
+  componentWillUnmount() {
+    store.dispatch(stopFetchCycle());
   }
 
   render() {
