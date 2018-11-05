@@ -8,6 +8,9 @@ import {
 import {
   sortConsultantsAlphabeticallyByNode
 } from './utils';
+import {
+  makeGetFilterBy,
+} from '../ui/selectors';
 
 const getRootSliceFromStore = state => state.consultants;
 
@@ -28,7 +31,26 @@ export const getNumberOfConsultantsInBusyState = createSelector(
 
 export const getConsultants = createSelector(
   getRootSliceFromStore,
-  (consultants = []) => {
-    return sortConsultantsAlphabeticallyByNode(consultants, 'team');
+  makeGetFilterBy,
+  (consultants = [], getFilterBy) => {
+    const sourceFilters = getFilterBy('sources');
+    const teamFilters = getFilterBy('teams');
+    const fnFilters = getFilterBy('functions');
+
+    const filteredConsultants = consultants
+      .filter(consultant => teamFilters.length > 0
+        ? teamFilters.includes(consultant.team)
+        : true // keep if we have no filters
+      )
+      .filter(consultant => fnFilters.length > 0
+        ? consultant.functions.reduce((hasFn, fn) => hasFn || fnFilters.includes(fn), false)
+        : true // keep if we have no filters
+      )
+      .filter(consultant => sourceFilters.length > 0
+        ? consultant.sources.reduce((hasSource, source) => hasSource || sourceFilters.includes(source), false)
+        : true // keep if we have no filters
+      );
+
+    return sortConsultantsAlphabeticallyByNode(filteredConsultants, 'team');
   },
 );
