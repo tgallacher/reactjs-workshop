@@ -1,7 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import DataTableHeading from './DataTableHeading';
 import DataTableRow from './DataTableRow';
+
+export { default as DataTableHeading } from './DataTableHeading';
+export { default as DataTableRow } from './DataTableRow';
 
 // Shape of 'rowData' === data[]
 // Shape of 'data' ===
@@ -18,11 +22,13 @@ const DataTable = ({ rowData = [] }) => (
     <DataTableHeading />
 
     {rowData.map(data => (
-      <DataTableRow key={`${data.name}-${data.team}`} {...data} />
+      <DataTableRow key={`${data.username}-${data.team}`} {...data} />
     ))}
   </section>
 );
 
-export { default as DataTableHeading } from './DataTableHeading';
-export { default as DataTableRow } from './DataTableRow';
-export default DataTable;
+const mapStateToProps = state => ({
+  rowData: state,
+})
+
+export default connect(mapStateToProps)(DataTable);
