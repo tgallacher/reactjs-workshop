@@ -64,7 +64,9 @@ export default (prevState = defaultState, action) => {
     case UI_UPDATE_SORT_BY:
       return {
         ...prevState,
-        sortBy: action.payload.sortBy,
+        sortBy: action.payload.sortBy != null
+          ? action.payload.sortBy.value
+          : null,
       };
 
     case UI_UPDATE_FILTER_BY:

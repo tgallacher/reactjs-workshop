@@ -1,5 +1,11 @@
 import moment from 'moment';
 
+import {
+  isStatusUnavailable,
+  isStatusAvailable,
+  isStatusBusy,
+} from '../utils/status';
+
 // We add duplicates to effectively
 // weigh certain activity types.
 const mockActivities = [
@@ -43,8 +49,21 @@ export const transformConsultantNode = ({
   team
 }, shouldRandomise) => {
   const currMoment = moment();
+  const randomisedActivity = shouldRandomise
+    ? mockActivities[Math.floor(Math.random() * 21)]
+    : activity;
 
   return {
+    // Internal for sorting
+    // TODO switch this to status enum usage,
+    // and update app to use 'activity' for string value
+    _statusEnum: isStatusAvailable(randomisedActivity)
+      ? 'available'
+      : isStatusUnavailable(randomisedActivity)
+        ? 'unavailable'
+        : isStatusBusy(randomisedActivity)
+          ? 'busy'
+          : 'unknown',
     status_since: shouldRandomise
       ?  currMoment
         .subtract(Math.floor(Math.random() * 2), 'hours')
@@ -65,9 +84,7 @@ export const transformConsultantNode = ({
           'consultant': 'Internal'
         }[source]))
       : [],
-    status: shouldRandomise
-      ? mockActivities[Math.floor(Math.random() * 21)]
-      : activity,
+    status: randomisedActivity,
     name: friendly_name,
     team,
   }
