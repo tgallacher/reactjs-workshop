@@ -10,6 +10,7 @@ import {
 } from './utils';
 import {
   makeGetFilterBy,
+  getSortBy,
 } from '../ui/selectors';
 
 const getRootSliceFromStore = state => state.consultants;
@@ -17,7 +18,8 @@ const getRootSliceFromStore = state => state.consultants;
 export const getConsultants = createSelector(
   getRootSliceFromStore,
   makeGetFilterBy,
-  (consultants = [], getFilterBy) => {
+  getSortBy,
+  (consultants = [], getFilterBy, sortBy) => {
     const sourceFilters = getFilterBy('sources');
     const teamFilters = getFilterBy('teams');
     const fnFilters = getFilterBy('functions');
@@ -36,7 +38,7 @@ export const getConsultants = createSelector(
         : true // keep if we have no filters
       );
 
-    return sortConsultantsAlphabeticallyByNode(filteredConsultants, 'team');
+    return sortConsultantsAlphabeticallyByNode(filteredConsultants, sortBy);
   },
 );
 

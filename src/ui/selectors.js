@@ -19,4 +19,4 @@ export const makeGetFilterBy = createSelector(
       ? ui.filterBy[filterType]
       : [],
   )
-)
+);
