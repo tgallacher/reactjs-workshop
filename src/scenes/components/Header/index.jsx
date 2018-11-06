@@ -131,6 +131,7 @@ class Header extends React.Component {
             <SortbyInputColumn className="flex-grow w-1/5">
               <Select
                 placeholder="Sort by"
+                isSearchable={false}
                 isClearable
                 className="w-1/2 ml-auto"
                 tabIndex="1"
