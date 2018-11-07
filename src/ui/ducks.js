@@ -53,10 +53,10 @@ export default (prevState = defaultState, action) => {
         filters: {
           teams: [...new Set(action.payload.data.map(consultant => consultant.team))],
           sources: [...new Set(
-            action.payload.data.reduce((sources, consultant) => sources.concat(consultant.sources), [])
+            action.payload.data.reduce((sources, consultant) => sources.concat(consultant.sources), []),
           )],
           functions: [...new Set(
-            action.payload.data.reduce((functions, consultant) => functions.concat(consultant.functions), [])
+            action.payload.data.reduce((functions, consultant) => functions.concat(consultant.functions), []),
           )],
         },
       };
@@ -70,14 +70,14 @@ export default (prevState = defaultState, action) => {
       };
 
     case UI_UPDATE_FILTER_BY:
-        return {
-          ...prevState,
-          filterBy: {
-            teams: action.payload.data.filter(o => /team@/.test(o.value)).map(o => o.label),
-            sources: action.payload.data.filter(o => /source@/.test(o.value)).map(o => o.label),
-            functions: action.payload.data.filter(o => /function@/.test(o.value)).map(o => o.label),
-          },
-        };
+      return {
+        ...prevState,
+        filterBy: {
+          teams: action.payload.data.filter(o => /team@/.test(o.value)).map(o => o.label),
+          sources: action.payload.data.filter(o => /source@/.test(o.value)).map(o => o.label),
+          functions: action.payload.data.filter(o => /function@/.test(o.value)).map(o => o.label),
+        },
+      };
 
     default:
       return prevState;

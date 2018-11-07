@@ -1,3 +1,4 @@
+/* eslint no-nested-ternary: off, camelcase: off */
 import moment from 'moment';
 
 import {
@@ -46,7 +47,7 @@ export const transformConsultantNode = ({
   functions,
   sources,
   friendly_name,
-  team
+  team,
 }, shouldRandomise) => {
   const currMoment = moment();
   const randomisedActivity = shouldRandomise
@@ -65,7 +66,7 @@ export const transformConsultantNode = ({
           ? 'busy'
           : 'unknown',
     status_since: shouldRandomise
-      ?  currMoment
+      ? currMoment
         .subtract(Math.floor(Math.random() * 2), 'hours')
         .subtract(Math.floor(Math.random() * 59), 'minutes')
         .subtract(Math.floor(Math.random() * 59), 'seconds')
@@ -79,15 +80,15 @@ export const transformConsultantNode = ({
       ? sources
         .filter(source => source !== 'direct_dial')
         .map(source => ({
-          'phone': 'Inbound',
-          'dialler': 'Dialler',
-          'consultant': 'Internal'
+          phone: 'Inbound',
+          dialler: 'Dialler',
+          consultant: 'Internal',
         }[source]))
       : [],
     status: randomisedActivity,
     name: friendly_name,
     team,
-  }
+  };
 };
 
 /**
@@ -101,7 +102,7 @@ export const transformConsultantNode = ({
 export const sortConsultantsAlphabeticallyByNode = (consultants = [], nodeName) => {
   if (
     ! Array.isArray(consultants)
-    || consultants.length == 0
+    || consultants.length === 0
     // Assume if node in 1st element, it's in all of them
     // This should be reasonable, as we transform data as it comes in.
     || ! (nodeName in consultants[0])
@@ -110,7 +111,7 @@ export const sortConsultantsAlphabeticallyByNode = (consultants = [], nodeName) 
   }
 
   // Sorts alphabetical order
-  const sortedNodeVals = consultants.map(c => c[nodeName]).sort((a,b) => {
+  const sortedNodeVals = consultants.map(c => c[nodeName]).sort((a, b) => {
     if (a < b) return -1;
     if (a > b) return 1;
 
@@ -121,8 +122,8 @@ export const sortConsultantsAlphabeticallyByNode = (consultants = [], nodeName) 
   return [].concat(
     ...uniqNodeVals.map(
       t => consultants.filter(
-        c => c[nodeName] === t
-      )
-    )
+        c => c[nodeName] === t,
+      ),
+    ),
   );
-}
+};

@@ -15,8 +15,8 @@ export const getFilters = createSelector(
 export const makeGetFilterBy = createSelector(
   getRootSliceFromStore,
   ui => defaultMemoize(
-    (filterType) => filterType in ui.filterBy
+    filterType => filterType in ui.filterBy
       ? ui.filterBy[filterType]
       : [],
-  )
+  ),
 );

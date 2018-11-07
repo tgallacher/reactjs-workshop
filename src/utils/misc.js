@@ -6,7 +6,7 @@ export const SORT_DIR_DESC = 'desc';
 export const SORT_DIR_ASC = 'asc';
 
 export const sortArrayAlphabetically = (strArr, dir = SORT_DIR_DESC) => {
-  if ( ! Array.isArray(strArr)) {
+  if (! Array.isArray(strArr)) {
     // we haven't been given what we
     // expected, just return it.
     return strArr;
@@ -16,16 +16,16 @@ export const sortArrayAlphabetically = (strArr, dir = SORT_DIR_DESC) => {
     const strA = a.toLowerCase();
     const strB = b.toLowerCase();
 
-    //sort string descending
+    // sort string descending
     if (dir === SORT_DIR_DESC) {
       if (strA < strB) return -1;
       if (strA > strB) return 1;
     } else if (dir === SORT_DIR_ASC) {
-      //sort string ascending
+      // sort string ascending
       if (strA > strB) return -1;
       if (strA < strB) return 1;
     }
 
     return 0; // leave un-touched
   });
-}
+};
