@@ -8,6 +8,7 @@ const DataTableHeading = ({
   functionsHeader = 'Function(s)',
   sourcesHeader = 'Source(s)',
   statusHeader = 'Status',
+  ...props
 }) => (
   <DataTableRow
     isHeading
@@ -16,6 +17,7 @@ const DataTableHeading = ({
     status={statusHeader}
     name={consultantNameHeader}
     team={teamHeader}
+    {...props}
   />
 );
 

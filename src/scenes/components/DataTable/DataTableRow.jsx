@@ -35,6 +35,7 @@ const SourcesCol = styled('div')``;
 export const DataTableRow = ({
   status_since = ((new Date()).getTime() / 1000), // default to 'now'
   isHeading = false,
+  className,
   functions = [],
   sources = [],
   status,
@@ -53,7 +54,8 @@ export const DataTableRow = ({
         [statusUnavailableCss]: ! isHeading && isStatusUnavailable(status),
         [statusAvailableCss]: ! isHeading && isStatusAvailable(status),
         [statusBusyCss]: ! isHeading && isStatusBusy(status),
-      }
+      },
+      className,
     )}
   >
     <ConsultantNameCol className="flex-1">
