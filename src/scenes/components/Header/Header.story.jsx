@@ -28,11 +28,10 @@ const storeDecorator = (story) => {
 }
 
 storiesOf('Header/SummaryBlock', module)
-  .addDecorator(storeDecorator)
   .add('Default', () => <SummaryBlock />)
-  .add('Busy', () => <SummaryBlock  status="On Call" stat="29" />)
-  .add('Available', () => <SummaryBlock  status="Ready" stat="49" />)
-  .add('Unavailable', () => <SummaryBlock  status="Meeting" stat="83" />);
+  .add('Busy', () => <SummaryBlock  status="busy" stat="29" />)
+  .add('Available', () => <SummaryBlock  status="available" stat="49" />)
+  .add('Unavailable', () => <SummaryBlock  status="unavailable" stat="83" />);
 
 storiesOf('Header', module)
   .addDecorator(storeDecorator)
