@@ -28,6 +28,7 @@
     "react-emotion": "^9.2.12",
     "react-redux": "^5.1.0",
     "react-select": "^2.1.1",
+    "react-virtualized": "^9.21.0",
     "redux": "^4.0.1",
     "redux-saga": "^0.16.2",
     "redux-saga-test-plan": "^3.7.0",
