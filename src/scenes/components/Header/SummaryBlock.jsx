@@ -7,7 +7,7 @@ const IconWrapper = styled('div')`
 
 // Status: @see src/utils/status.js
 // @param {'available' | 'unavailable' | 'busy' } status
-const SummaryBlock = ({ status = 'Ready', stat = 0 }) => {
+const SummaryBlock = ({ status = 'available', stat = 0 }) => {
   const isAvailable = status === 'available';
   const isUnavailable = status === 'unavailable';
   const isBusy = status === 'busy';
