@@ -1,31 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Provider } from 'react-redux';
 
-import { startFetchCycle, stopFetchCycle } from '../../../consultants/ducks';
-import store from '../../../boot/store';
-
+import { storeDecorator } from '../../../utils/storybook';
 import Header from './index';
 import SummaryBlock from './SummaryBlock';
-
-const storeDecorator = (story) => {
-  store.dispatch(startFetchCycle());
-
-  // Need to call stop, as fetch data cycles
-  // on a HTTP polling loop. We don't need the data
-  // to be pulled constantly; so, give it time to fetch data
-  // and the "race" condition to be satisfied, then cancel the
-  // data polling loop by dispatching the stop action creator.
-  setTimeout(() => {
-    store.dispatch(stopFetchCycle());
-  }, 8000);
-
-  return (
-    <Provider store={store}>
-      {story()}
-    </Provider>
-  );
-}
 
 storiesOf('Header/SummaryBlock', module)
   .add('Default', () => <SummaryBlock />)

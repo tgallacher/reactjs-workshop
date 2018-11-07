@@ -9,7 +9,7 @@ import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,
 } from '../../../utils/status';
-
+import { storeDecorator } from '../../../utils/storybook';
 
 const DataTableStories = storiesOf('DataTable', module);
 const DataTableHeadingStories = storiesOf('DataTable/Heading', module);
@@ -90,6 +90,7 @@ DataTableRowStories
 
 // Data Table
 DataTableStories
+  .addDecorator(storeDecorator)
   .add('Default', () => {
     const data = [
       {

@@ -1,0 +1,9 @@
+#
+# Our target/accepted browser policy.
+#
+# Here, we are leveraging market share and active browsers
+# as a best practice apporach.
+#
+> 1%
+IE 11
+not dead
