@@ -6,7 +6,7 @@ import {
   isStatusBusy,
 } from '../utils/status';
 import {
-  sortConsultantsAlphabeticallyByNode
+  sortConsultantsAlphabeticallyByNode,
 } from './utils';
 import {
   makeGetFilterBy,
@@ -25,20 +25,23 @@ export const getConsultants = createSelector(
     const fnFilters = getFilterBy('functions');
 
     const filteredConsultants = consultants
-      .filter(consultant => teamFilters.length > 0
-        ? teamFilters.includes(consultant.team)
-        : true // keep if we have no filters
+      .filter(
+        consultant => teamFilters.length > 0
+          ? teamFilters.includes(consultant.team)
+          : true, // keep if we have no filters
       )
-      .filter(consultant => fnFilters.length > 0
-        ? consultant.functions.reduce((hasFn, fn) => hasFn || fnFilters.includes(fn), false)
-        : true // keep if we have no filters
+      .filter(
+        consultant => fnFilters.length > 0
+          ? consultant.functions.reduce((hasFn, fn) => hasFn || fnFilters.includes(fn), false)
+          : true, // keep if we have no filters
       )
-      .filter(consultant => sourceFilters.length > 0
-        ? consultant.sources.reduce((hasSource, source) => hasSource || sourceFilters.includes(source), false)
-        : true // keep if we have no filters
+      .filter(
+        consultant => sourceFilters.length > 0
+          ? consultant.sources.reduce((hasSource, source) => hasSource || sourceFilters.includes(source), false)
+          : true, // keep if we have no filters
       );
 
-    const sortedByName = sortConsultantsAlphabeticallyByNode(filteredConsultants, 'username')
+    const sortedByName = sortConsultantsAlphabeticallyByNode(filteredConsultants, 'username');
 
     return sortConsultantsAlphabeticallyByNode(sortedByName, sortBy);
   },

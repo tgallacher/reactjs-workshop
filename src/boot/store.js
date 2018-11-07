@@ -14,7 +14,7 @@ const middleware = [
   sagaMiddleware,
 ];
 
-if (! false) {
+if (! ISPRODUCTION) {
   composeEnhancers = '__REDUX_DEVTOOLS_EXTENSION_COMPOSE__' in window
     // eslint-disable-next-line
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__

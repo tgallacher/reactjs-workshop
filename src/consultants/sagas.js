@@ -21,7 +21,11 @@ let shouldShuffle = false;
  * Primary Saga for fetching consultant data from
  * upstream API service.
  */
-const fetchConsultantDataSaga = function*() {
+const fetchConsultantDataSaga = function* fetchConsultantDataSaga() {
+  const performRandomSort = () => shouldShuffle
+    ? Math.random() - Math.random()
+    : 0;
+
   while (true) {
     try {
       const rawData = yield call(fetchConsultantData);
@@ -34,12 +38,13 @@ const fetchConsultantDataSaga = function*() {
 
       // Normalise data to match app
       const data = yield all(consultantUsernames
-        .sort(() => shouldShuffle
-          ? Math.random() - Math.random()
-          : 0
-        )
+        .sort(performRandomSort)
         .map(
-          (consultantUsername, idx) => call(transformConsultantNode, rawData[consultantUsername], idx % Math.floor(numConsultants / randomisationFactor) === 0),
+          (consultantUsername, idx) => call(
+            transformConsultantNode,
+            rawData[consultantUsername],
+            idx % Math.floor(numConsultants / randomisationFactor) === 0,
+          ),
         ));
 
       shouldShuffle = ! shouldShuffle;
@@ -47,7 +52,8 @@ const fetchConsultantDataSaga = function*() {
       yield put(consultantFetchComplete(data));
       yield call(delay, 8000);
     } catch (error) {
-      console.error(error);
+      console.error(error); // eslint-disable-line
+
       return; // drop errors for now
     }
   }
@@ -58,7 +64,7 @@ export default function* rootConsultantSaga() {
     yield take(CONSULTANTS_START_FETCH_CYCLE);
     yield race([
       call(fetchConsultantDataSaga),
-      take(CONSULTANTS_STOP_FETCH_CYCLE)
+      take(CONSULTANTS_STOP_FETCH_CYCLE),
     ]);
   }
 }

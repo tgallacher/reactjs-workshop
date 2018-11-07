@@ -1,3 +1,4 @@
+/* eslint import/prefer-default-export: off */
 
 /**
  * Fetch consultant data from upstream API.
@@ -10,4 +11,4 @@ export const fetchConsultantData = async () => {
   const resp = await fetch(API_URL);
 
   return resp.json();
-}
+};

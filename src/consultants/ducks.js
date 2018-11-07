@@ -32,4 +32,4 @@ export default (prevState = defaultState, action) => {
     default:
       return prevState;
   }
-}
+};
