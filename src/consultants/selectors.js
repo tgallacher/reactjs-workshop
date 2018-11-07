@@ -38,7 +38,9 @@ export const getConsultants = createSelector(
         : true // keep if we have no filters
       );
 
-    return sortConsultantsAlphabeticallyByNode(filteredConsultants, sortBy);
+    const sortedByName = sortConsultantsAlphabeticallyByNode(filteredConsultants, 'username')
+
+    return sortConsultantsAlphabeticallyByNode(sortedByName, sortBy);
   },
 );
 
