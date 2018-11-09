@@ -13,7 +13,7 @@ import DataTableRow from './DataTableRow';
 //  sources: string[],
 //  functions: string[],
 //  status: string,
-//  status_since: number,
+//  statusSince: number,
 // }
 const DataTable = ({ rowData = [] }) => (
   <section className="max-w-4xl mx-auto">

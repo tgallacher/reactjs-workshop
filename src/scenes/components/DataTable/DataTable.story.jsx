@@ -41,7 +41,7 @@ DataTableRowStories
         'Secondary Sales',
       ]}
       status={STATUS_STATE_AVAILABLE}
-      status_since={1537786989.1483066}
+      statusSince={1537786989.1483066}
     />
   ))
   .add('Available', () => (
