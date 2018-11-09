@@ -65,7 +65,7 @@ export const transformConsultantNode = ({
         : isStatusBusy(randomisedActivity)
           ? 'busy'
           : 'unknown',
-    status_since: shouldRandomise
+    statusSince: shouldRandomise
       ? currMoment
         .subtract(Math.floor(Math.random() * 2), 'hours')
         .subtract(Math.floor(Math.random() * 59), 'minutes')

@@ -34,7 +34,7 @@ const FunctionsCol = styled('div')``;
 const SourcesCol = styled('div')``;
 
 const DataTableRow = ({
-  status_since = ((new Date()).getTime() / 1000), // default to 'now'
+  statusSince = ((new Date()).getTime() / 1000), // default to 'now'
   isHeading = false,
   className,
   functions = [],
@@ -92,7 +92,7 @@ const DataTableRow = ({
             <div>{status || 'Unkown'}</div>
 
             <div className="italic">
-              <LiveTimeDifference sinceTimestamp={status_since} />
+              <LiveTimeDifference sinceTimestamp={statusSince} />
             </div>
           </React.Fragment>
         )
