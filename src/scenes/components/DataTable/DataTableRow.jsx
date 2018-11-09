@@ -7,8 +7,8 @@ import {
   isStatusUnavailable,
   isStatusAvailable,
   isStatusBusy,
-} from '../../../utils/status';
-import { sortArrayAlphabetically } from '../../../utils/misc';
+} from 'utils/status';
+import { sortArrayAlphabetically } from 'utils/misc';
 import LiveTimeDifference from './LiveTimeDifference';
 
 const statusAvailableCss = css`

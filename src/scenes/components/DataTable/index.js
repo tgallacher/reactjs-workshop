@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { getConsultants } from '../../../consultants/selectors';
+import { getConsultants } from 'consultants/selectors';
 import DataTable from './DataTable';
 
 export { default as DataTableHeading } from './DataTableHeading';

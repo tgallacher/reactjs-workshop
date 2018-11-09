@@ -2,8 +2,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 
-import { startFetchCycle, stopFetchCycle } from '../consultants/ducks';
-import store from '../boot/store';
+import { startFetchCycle, stopFetchCycle } from 'consultants/ducks';
+import store from 'boot/store';
 
 export const storeDecorator = (story) => {
   store.dispatch(startFetchCycle());

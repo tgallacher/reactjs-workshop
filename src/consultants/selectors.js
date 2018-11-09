@@ -4,14 +4,14 @@ import {
   isStatusUnavailable,
   isStatusAvailable,
   isStatusBusy,
-} from '../utils/status';
-import {
-  sortConsultantsAlphabeticallyByNode,
-} from './utils';
+} from 'utils/status';
 import {
   makeGetFilterBy,
   getSortBy,
-} from '../ui/selectors';
+} from 'ui/selectors';
+import {
+  sortConsultantsAlphabeticallyByNode,
+} from './utils';
 
 const getRootSliceFromStore = state => state.consultants;
 
