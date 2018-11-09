@@ -8,6 +8,7 @@
     "storybook": "cross-env NODE_ENV=production build-storybook",
     "storybook:dev": "cross-env NODE_ENV=development start-storybook -p 6006",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.js",
+    "server:dev": "json-server --watch db.json",
     "build:dev": "cross-env NODE_ENV=development webpack --config ./webpack.dev.js",
     "lint": "eslint --ext .js --ext .jsx --config ./.eslintrc.js ./src/**/*"
   },
