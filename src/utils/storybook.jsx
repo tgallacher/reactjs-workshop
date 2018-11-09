@@ -1,3 +1,4 @@
+/* eslint import/prefer-default-export: off */
 import React from 'react';
 import { Provider } from 'react-redux';
 
@@ -22,4 +23,4 @@ export const storeDecorator = (story) => {
       {story()}
     </Provider>
   );
-}
+};
