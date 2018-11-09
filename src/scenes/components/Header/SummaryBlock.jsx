@@ -26,7 +26,7 @@ const SummaryBlock = ({ status = 'available', stat = 0 }) => {
           'text-green-dark': isAvailable,
           'text-orange-dark': isUnavailable,
           'text-purple-dark': isBusy,
-        }
+        },
       )}
     >
       <div id="number" className="flex-1 m-1/2">
@@ -45,7 +45,7 @@ const SummaryBlock = ({ status = 'available', stat = 0 }) => {
                 'far fa-user': isAvailable,
                 'fas fa-user-slash': isUnavailable,
                 'fas fa-user': isBusy,
-              }
+              },
             )}
           />
         </div>

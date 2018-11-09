@@ -1,3 +1,4 @@
+/* eslint no-nested-ternary: off */
 import React from 'react';
 import styled, { css, cx } from 'react-emotion';
 import { rgba } from 'polished';
@@ -32,7 +33,7 @@ const StatusCol = styled('div')``;
 const FunctionsCol = styled('div')``;
 const SourcesCol = styled('div')``;
 
-export const DataTableRow = ({
+const DataTableRow = ({
   status_since = ((new Date()).getTime() / 1000), // default to 'now'
   isHeading = false,
   className,

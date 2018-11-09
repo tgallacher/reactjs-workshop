@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-class LiveTimeDifference extends React.Component{
+class LiveTimeDifference extends React.Component {
   timerId = null;
 
   state = {
@@ -11,7 +11,7 @@ class LiveTimeDifference extends React.Component{
   componentDidMount() {
     this.timerId = setInterval(() => {
       this.setState({
-        currTimestamp: moment()
+        currTimestamp: moment(),
       });
     }, 1000);
   }

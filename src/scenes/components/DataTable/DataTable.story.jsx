@@ -1,3 +1,4 @@
+/* eslint import/no-extraneous-dependencies: off */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
@@ -17,8 +18,8 @@ const DataTableRowStories = storiesOf('DataTable/Row', module);
 
 // Data Table Heading
 DataTableHeadingStories
-.add('Default', () => (
-  <DataTableHeading />
+  .add('Default', () => (
+    <DataTableHeading />
   ));
 
 // Data Table Row
@@ -28,8 +29,8 @@ DataTableRowStories
   ))
   .add('Available (long status time)', () => (
     <DataTableRow
-      name='John Doe'
-      team= 'Alpha'
+      name="John Doe"
+      team="Alpha"
       sources={[
         'Referrals',
         'Campaign',
@@ -45,8 +46,8 @@ DataTableRowStories
   ))
   .add('Available', () => (
     <DataTableRow
-      name='John Doe'
-      team= 'Beta'
+      name="John Doe"
+      team="Beta"
       sources={[
         'Referrals',
         'Campaign',
@@ -61,8 +62,8 @@ DataTableRowStories
   ))
   .add('Unavailable', () => (
     <DataTableRow
-      name='Jane Smith'
-      team= 'Alpha'
+      name="Jane Smith"
+      team="Alpha"
       sources={[
         'Cold Call',
         'Campaign',
@@ -76,8 +77,8 @@ DataTableRowStories
   ))
   .add('Busy', () => (
     <DataTableRow
-      name='Alice Bob'
-      team= 'Gamma'
+      name="Alice Bob"
+      team="Gamma"
       sources={[
         'Campaign',
       ]}
@@ -95,18 +96,18 @@ DataTableStories
     const data = [
       {
         name: 'Alice Bob',
-        team:  'Beta',
+        team: 'Beta',
         sources: [
           'Campaign',
         ],
         functions: [
           'Primary Sales',
         ],
-        status: "Meeting",
+        status: 'Meeting',
       },
       {
         name: 'Jane Smith',
-        team:  'Beta',
+        team: 'Beta',
         sources: [
           'Cold Call',
           'Campaign',
@@ -119,7 +120,7 @@ DataTableStories
       },
       {
         name: 'John Doe',
-        team:  'Beta',
+        team: 'Beta',
         sources: [
           'Referrals',
           'Campaign',
@@ -133,18 +134,18 @@ DataTableStories
       },
       {
         name: 'Alice Bob',
-        team:  'Gamma',
+        team: 'Gamma',
         sources: [
           'Campaign',
         ],
         functions: [
           'Primary Sales',
         ],
-        status: "Meeting",
+        status: 'Meeting',
       },
       {
         name: 'Jane Smith',
-        team:  'Alpha',
+        team: 'Alpha',
         sources: [
           'Cold Call',
           'Campaign',
@@ -157,7 +158,7 @@ DataTableStories
       },
       {
         name: 'John Doe',
-        team:  'Beta',
+        team: 'Beta',
         sources: [
           'Referrals',
           'Campaign',
@@ -168,7 +169,7 @@ DataTableStories
           'Primary Sales',
         ],
         status: STATUS_STATE_AVAILABLE,
-      }
+      },
     ];
 
     return (
