@@ -8,8 +8,7 @@ import AppBar from './components/AppBar';
 import Header from './components/Header';
 import DataTable from './components/DataTable';
 
-class App extends React.Component{
-
+class App extends React.Component {
   componentDidMount() {
     // Makes initial request
     store.dispatch(startFetchCycle());

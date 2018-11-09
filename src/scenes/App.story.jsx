@@ -1,7 +1,8 @@
+/* eslint import/no-extraneous-dependencies: off */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import App from './';
+import App from '.';
 import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,
@@ -10,18 +11,18 @@ import {
 const data = [
   {
     name: 'Alice Bob',
-    team:  'Achillies',
+    team: 'Achillies',
     sources: [
       'Internal',
     ],
     functions: [
       'Sales',
     ],
-    status: "Meeting",
+    status: 'Meeting',
   },
   {
     name: 'Jane Smith',
-    team:  'Aphrodite',
+    team: 'Aphrodite',
     sources: [
       'Outbound',
       'Internal',
@@ -34,7 +35,7 @@ const data = [
   },
   {
     name: 'John Doe',
-    team:  'Apollo',
+    team: 'Apollo',
     sources: [
       'Inbound',
       'Internal',
@@ -48,18 +49,18 @@ const data = [
   },
   {
     name: 'Alice Bob',
-    team:  'Achillies',
+    team: 'Achillies',
     sources: [
       'Internal',
     ],
     functions: [
       'Sales',
     ],
-    status: "Meeting",
+    status: 'Meeting',
   },
   {
     name: 'Jane Smith',
-    team:  'Aphrodite',
+    team: 'Aphrodite',
     sources: [
       'Outbound',
       'Internal',
@@ -72,7 +73,7 @@ const data = [
   },
   {
     name: 'John Doe',
-    team:  'Apollo',
+    team: 'Apollo',
     sources: [
       'Inbound',
       'Internal',
@@ -83,7 +84,7 @@ const data = [
       'Sales',
     ],
     status: STATUS_STATE_AVAILABLE,
-  }
+  },
 ];
 
 storiesOf('App', module)
