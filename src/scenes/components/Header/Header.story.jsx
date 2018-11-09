@@ -2,7 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { storeDecorator } from '../../../utils/storybook';
+import { storeDecorator } from 'utils/storybook';
 import Header from './index';
 import SummaryBlock from './SummaryBlock';
 

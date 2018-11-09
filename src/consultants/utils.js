@@ -5,7 +5,7 @@ import {
   isStatusUnavailable,
   isStatusAvailable,
   isStatusBusy,
-} from '../utils/status';
+} from 'utils/status';
 
 // We add duplicates to effectively
 // weigh certain activity types.

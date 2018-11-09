@@ -6,7 +6,7 @@ import {
 import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from './reducer';
-import rootSaga from '../consultants/sagas';
+import rootSaga from 'consultants/sagas';
 
 let composeEnhancers = compose;
 const sagaMiddleware = createSagaMiddleware();

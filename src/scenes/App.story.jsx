@@ -6,7 +6,7 @@ import App from '.';
 import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,
-} from '../utils/status';
+} from '/utils/status';
 
 const data = [
   {

@@ -2,15 +2,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
+import {
+  STATUS_STATE_UNAVAILABLE,
+  STATUS_STATE_AVAILABLE,
+} from 'utils/status';
+import { storeDecorator } from 'utils/storybook';
 import DataTable, {
   DataTableHeading,
   DataTableRow,
 } from './index';
-import {
-  STATUS_STATE_UNAVAILABLE,
-  STATUS_STATE_AVAILABLE,
-} from '../../../utils/status';
-import { storeDecorator } from '../../../utils/storybook';
 
 const DataTableStories = storiesOf('DataTable', module);
 const DataTableHeadingStories = storiesOf('DataTable/Heading', module);

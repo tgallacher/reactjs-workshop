@@ -1,4 +1,4 @@
-import { CONSULTANTS_FETCH_COMPLETE } from '../consultants/ducks';
+import { CONSULTANTS_FETCH_COMPLETE } from 'consultants/ducks';
 
 export const defaultState = {
   filters: {
