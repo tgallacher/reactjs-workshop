@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { cx } from 'react-emotion';
+import styled from 'react-emotion';
 
 const Header = styled('header')``;
 const ContentWrapper = styled('div')``;
@@ -16,7 +16,7 @@ const AppBar = () => (
 
       <LogoutArea>
         <Logout className="bg-red hover:bg-red-dark text-white font-bold py-2 px-2">
-          <i className="fa fa-power-off"></i>
+          <i className="fa fa-power-off" />
         </Logout>
       </LogoutArea>
     </ContentWrapper>
