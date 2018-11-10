@@ -4,5 +4,5 @@ import { storiesOf } from '@storybook/react';
 
 import AppBar from './index';
 
-storiesOf('AppBar', module)
+storiesOf('Demo App/AppBar', module)
   .add('AppBar', () => <AppBar />);

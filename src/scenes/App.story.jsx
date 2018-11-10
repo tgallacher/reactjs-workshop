@@ -87,7 +87,7 @@ const data = [
   },
 ];
 
-storiesOf('App', module)
+storiesOf('Demo App/App', module)
   .add('App', () => (
     <App data={data} />
   ));
