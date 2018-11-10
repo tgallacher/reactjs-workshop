@@ -2,7 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import App from '.';
+import App from './index';
 import {
   STATUS_STATE_UNAVAILABLE,
   STATUS_STATE_AVAILABLE,

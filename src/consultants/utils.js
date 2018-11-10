@@ -72,8 +72,11 @@ export const transformConsultantNode = ({
         .subtract(Math.floor(Math.random() * 59), 'seconds')
         .unix()
       : moment.unix(activity_changed_at)
+        .year(currMoment.year())
         .date(currMoment.date())
-        .hour(currMoment.subtract(1, 'hours').hour()),
+        .month(currMoment.month())
+        .hour(currMoment.subtract(1, 'hour').hour())
+        .unix(),
     functions,
     username,
     sources: Array.isArray(sources)

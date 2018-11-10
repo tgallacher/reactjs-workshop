@@ -4,15 +4,23 @@ import moment from 'moment';
 class LiveTimeDifference extends React.Component {
   timerId = null;
 
-  state = {
-    currTimestamp: moment(),
-  };
+  constructor(props) {
+    super(props);
+
+    const nowMoment = moment();
+    const sinceMoment = moment.unix(props.sinceTimestamp); // timestamp in secs
+    const diffMoment = moment.utc(nowMoment.diff(sinceMoment));
+
+    this.state = {
+      currTimestamp: diffMoment,
+    };
+  }
 
   componentDidMount() {
     this.timerId = setInterval(() => {
-      this.setState({
-        currTimestamp: moment(),
-      });
+      this.setState(({ currTimestamp }) => ({
+        currTimestamp: currTimestamp.add(1, 'seconds'),
+      }));
     }, 1000);
   }
 
@@ -21,16 +29,13 @@ class LiveTimeDifference extends React.Component {
   }
 
   render() {
-    const { sinceTimestamp } = this.props;
     const { currTimestamp } = this.state;
 
-    const end = moment.unix(sinceTimestamp);
-    const diff = moment.duration(currTimestamp.diff(end));
-
     return (
-      diff.days() > 0
+      currTimestamp.hours() > 24
         ? '> 1 day'
-        : moment.utc(diff.asMilliseconds()).format('HH[h] mm[m] ss[s]')
+        : currTimestamp
+          .format('HH[h] mm[m] ss[s]')
     );
   }
 }
