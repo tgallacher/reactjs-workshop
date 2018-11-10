@@ -70,7 +70,6 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
-    "expect": "^23.6.0",
     "jest": "^23.6.0",
     "storybook-addon-specifications": "^2.1.2",
     "webpack": "^4.25.1",
