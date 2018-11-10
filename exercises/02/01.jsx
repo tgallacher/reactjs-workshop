@@ -26,13 +26,13 @@ import React from 'react';
 // Tips
 // ------
 // 🐨  Add the ALL of the following class names to your <input /> component to make it obvious on the screen:
-//      'appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
+//      "appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
 // 🐨  You'll need to "listen" for changes, based on the user's input. Think about which DOM API you could use,
 //      and where you can put this in your component.
 // 🐨  Remember that native DOM attributes are camelCased!
 // 🐨  You can initialise state and class properties using any of the valid syntax options; this project is setup
 //     to support "all" of the currently popular appraoches.
-class DataTable extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -42,4 +42,4 @@ class DataTable extends React.Component {
   }
 }
 
-export default DataTable;
+export default App;
