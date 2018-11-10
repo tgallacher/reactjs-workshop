@@ -1,7 +1,7 @@
 /* eslint react/destructuring-assignment: off */
 import React from 'react';
 
-// Exercise 01
+// Exercise 01-01
 // ===========
 //
 // At this stage we are not interesting in layout, just
