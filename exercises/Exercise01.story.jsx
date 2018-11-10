@@ -19,11 +19,13 @@ import Component02 from './01/02';
 // STOP!
 // =====
 //
-// These files are not intended to be edited. These are used to
-// help display and validate the work on the exercies.
+// This file is not intended to be edited. This is used to
+// help display and validate the work on the exercises.
 //
-// See the files inside './01/*' instead.
-// The files you are interested should not end /*.story.jsx$/i
+// In general, files ending with /*.story.jsx$/i are not expected to be changed
+// as part of the exercises.
+
+// @see: All files inside './01/*' instead.
 //
 
 storiesOf('Exercises/01', module)

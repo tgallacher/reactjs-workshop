@@ -28,10 +28,8 @@ import PropTypes from 'prop-types';
 //
 // Tip
 // ------
-// The imported components should be sufficiently semantic in their naming
-// that how they might be used to construct the desired layout seems logical.
-//
-// 🚫   Don't cheat by looking at the demo app.
+// 🐨  The imported components should be sufficiently semantic in their naming
+//    that how they might be used to construct the desired layout seems logical.
 function StatusBlock(props) {
   // You will need to UNCOMMENT the function call.
   // This will return an object whose contents are 2 nodes:
