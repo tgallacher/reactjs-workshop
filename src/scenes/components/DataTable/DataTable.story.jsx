@@ -12,9 +12,9 @@ import DataTable, {
   DataTableRow,
 } from './index';
 
-const DataTableStories = storiesOf('DataTable', module);
-const DataTableHeadingStories = storiesOf('DataTable/Heading', module);
-const DataTableRowStories = storiesOf('DataTable/Row', module);
+const DataTableStories = storiesOf('Demo App/DataTable', module);
+const DataTableHeadingStories = storiesOf('Demo App/DataTable/Heading', module);
+const DataTableRowStories = storiesOf('Demo App/DataTable/Row', module);
 
 // Data Table Heading
 DataTableHeadingStories
