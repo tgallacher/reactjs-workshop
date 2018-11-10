@@ -1,7 +1,14 @@
 # ReactJS Workshop: Exercises
 
 ## 01 - ReactJS Elements, Components & Props
+- `01` - React Element, Components & props basics
+- `02` - Extended React components + props
+
 ## 02 - State, Lifecycle, & Handling Events
+- `01` - Get/Set state, event handling
+- `02` - Controlled vs. uncontrolled elements
+- `03` - Lifecycle methods
+
 ## 03 - Conditional Rendering
 ## 04 - Lists & Keys,
 ## 05 - Controlled (Form) Components
@@ -15,6 +22,10 @@
 ## 11 - Action Creators & Reducers
 ## 12 - Selectors
 ## 13 - Sagas
+
+
+
+
 ## 14 -
 ## 15 -
 ## 16 -
