@@ -10,8 +10,9 @@
 - `03` - Lifecycle methods
 
 ## 03 - Conditional Rendering
+- `01` - Conditional rendering using JSX expressions
+
 ## 04 - Lists & Keys,
-## 05 - Controlled (Form) Components
 ## 06 - CSS-in-JSS
 
 ## 07 - HOCs

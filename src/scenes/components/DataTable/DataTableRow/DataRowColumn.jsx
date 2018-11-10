@@ -13,4 +13,7 @@ DataRowColumn.propTypes = {
   className: PropTypes.string, // eslint-disable-line
 };
 
+// Use display name API, so we can find it with Enzyme.
+DataRowColumn.displayName = 'DataRowColumn';
+
 export default DataRowColumn;
