@@ -14,4 +14,11 @@ module.exports = {
       // add your custom rules.
     ],
   },
+  externals: {
+    'jsdom': 'window',
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': 'window',
+    'react/addons': true,
+  }
 };

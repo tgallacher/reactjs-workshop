@@ -1,9 +1,11 @@
 import { addDecorator, configure } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
 import { themes } from '@storybook/components';
+import { configure as configureEnzyme } from 'enzyme';
+import EnzymeAdapter from 'enzyme-adapter-react-16';
 
 // automatically import all files ending in *.stories.js
-const req = require.context('../src', true, /story\.jsx$/);
+const req = require.context('../', true, /story\.jsx$/);
 
 addDecorator(
   withOptions({
@@ -21,6 +23,10 @@ addDecorator(
     hierarchySeparator: /\//,
   })
 );
+
+configureEnzyme({
+  adapter: new EnzymeAdapter()
+});
 
 configure(
   () => req.keys().forEach(filename => req(filename)),
