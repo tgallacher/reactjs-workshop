@@ -8,6 +8,7 @@ import { mount } from 'enzyme';
 
 import CenterContent from './CenterContent';
 import Exercise01 from './02/01';
+import Exercise02 from './02/02';
 
 
 // STOP!
@@ -23,19 +24,12 @@ import Exercise01 from './02/01';
 //
 
 storiesOf('Exercises/02', module)
-  .add('01', RenderExercise01);
+  .add('01', RenderExercise01)
+  .add('02', RenderExercise02);
 
-//
-// Exercise 01
-//
-function RenderExercise01() {
-  const component = <Exercise01 />;
-  const story = (
-    <CenterContent>
-      {component}
-    </CenterContent>
-  );
 
+
+function runExerciseSpecsWithDefaultSpecs(component, additionalSpecs) {
   specs(() => describe('Exercise 02-01', () => {
     let mounted;
 
@@ -82,7 +76,56 @@ function RenderExercise01() {
       input.simulate('change', { target: { value: 'foo' } });
       assert.strictEqual(mounted.state().team, 'foo', 'Expected the "team" key in state to have been updated');
     });
+
+    if (additionalSpecs !== undefined) {
+      additionalSpecs();
+    }
   }));
+}
+
+//
+// Exercise 01
+//
+function RenderExercise01() {
+  const component = <Exercise01 />;
+  const story = (
+    <CenterContent>
+      {component}
+    </CenterContent>
+  );
+
+  runExerciseSpecsWithDefaultSpecs(component);
+
+  return story;
+}
+
+//
+// Exercise 02
+//
+function RenderExercise02() {
+  const component = <Exercise02 />;
+  const story = (
+    <CenterContent>
+      {component}
+    </CenterContent>
+  );
+
+  runExerciseSpecsWithDefaultSpecs(component, () => {
+    it('Renders the input component as a controlled component', () => {
+      const mounted = mount(component);
+      const team = 'foobar';
+
+      mounted.setState({ team });
+
+      assert.include(
+        mounted.find('input').prop('value'), team,
+        'Expected the input element to be a "controlled" component',
+      );
+
+      // reset
+      mounted.setState({ team: '' });
+    });
+  });
 
   return story;
 }
