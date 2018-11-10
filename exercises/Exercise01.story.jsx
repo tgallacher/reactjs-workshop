@@ -3,7 +3,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
 import { beforeEach } from 'storybook-addon-specifications/dist/preview';
-import expect from 'expect';
 import { assert } from 'chai';
 import { mount } from 'enzyme';
 
@@ -51,11 +50,15 @@ function RenderExercise01() {
     });
 
     it('Should render the status label', () => {
-      expect(output.text()).toContain('available');
+      assert.include(
+        output.text(),
+        'Available',
+        'The status could not be found in the component output',
+      );
     });
 
     it('Should render the stat value', () => {
-      expect(output.text()).toContain('26');
+      assert.include(output.text(), '26', 'The statistic value could not be found in the component output');
     });
 
     it('Should render one status icon', () => {
@@ -64,7 +67,7 @@ function RenderExercise01() {
       found += output.find('.fas').length;
       found += output.find('.far').length;
 
-      expect(found).toEqual(1);
+      assert.equal(found, 1, 'Did not find one of the expected icon class names');
     });
   }));
 
