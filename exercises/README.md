@@ -19,7 +19,9 @@
 ## 05 - CSS-in-JSS
 - `01` - Styling the data table rows
 
-## xx - HOCs
+## 06 - HOCs
+- `01` - onMouseMove
+
 ## xx - Render Props
 ## xx - Context API
 ## xx - Compound Components
