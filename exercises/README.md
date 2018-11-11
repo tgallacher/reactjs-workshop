@@ -16,16 +16,17 @@
 ## 04 - Lists & Keys,
 - `01` - Lists: building the Data table
 
-## 06 - CSS-in-JSS
+## 05 - CSS-in-JSS
+- `01` - Styling the data table rows
 
-## 07 - HOCs
-## 08 - Render Props
-## 09 - Context API
-## 10 - Compound Components
+## xx - HOCs
+## xx - Render Props
+## xx - Context API
+## xx - Compound Components
 
-## 11 - Action Creators & Reducers
-## 12 - Selectors
-## 13 - Sagas
+## xx - Action Creators & Reducers
+## xx - Selectors
+## xx - Sagas
 
 
 

@@ -16,7 +16,6 @@ import DataRow from './03/02';
 
 import CenterContent from './CenterContent';
 import Exercise01 from './04/01';
-import Exercise02 from './04/02';
 
 // STOP!
 // =====
@@ -31,8 +30,7 @@ import Exercise02 from './04/02';
 //
 
 storiesOf('Exercises/04', module)
-  .add('01', renderExercise01)
-  .add('02', renderExercise02);
+  .add('01', renderExercise01);
 
 //
 // Exercise 01
@@ -165,61 +163,6 @@ function renderExercise01() {
 
       // FIXME: We're strongly coupling the expected value across tests...; ok for now
       assert.include(dataRows.at(fnsIdx).text(), '-');
-    });
-  }));
-
-  return story;
-}
-
-//
-// Exercise 02
-//
-function renderExercise02() {
-  const rowData = [
-    { team: 'Gryffindor', status: 'available', name: 'Harry potter', functions: ['Wizzard', 'Hero'], sources: ['Hogwarts'] },
-    { team: 'Gryffindor', status: 'available', name: 'Ron Weasley', functions: ['Wizzard', 'Side-kick'], sources: ['Hogwarts'] },
-    { team: 'Gryffindor', status: 'unavailable', name: 'Hermione Granger', functions: ['Wizzard'], sources: ['Hogwarts'] },
-    { team: 'Solo', status: 'busy', name: 'Bruce Wayne', functions: ['Hero', 'Villian'], sources: ['Gotham'] },
-    { team: 'Solo', status: 'unavailable', name: 'Richard Grayson', functions: ['Hero', 'Villian'], sources: ['Gotham'] },
-    { team: 'Amazon', status: 'busy', name: 'Diana', functions: ['Hero', 'Princess', 'Warrior'], sources: [] },
-    { team: undefined, status: 'busy', name: 'Joe Blogg', functions: [], sources: ['Generalist'] },
-    { team: 'People', status: 'available', name: undefined, functions: ['Professional'], sources: ['Hell\'s Kitchen'] },
-  ];
-
-  const component = <Exercise02 data={rowData} />;
-  const story = (
-    <CenterContent>
-      {component}
-    </CenterContent>
-  );
-
-  specs(() => describe('Exercise 04/02', () => {
-    let wrapper;
-
-    beforeEach(() => {
-      wrapper = mount(component);
-    });
-
-    // Attendees are free to chose their own implementation approach using EmotionJS API
-    // Too many DoF to account for; not worth the ROI
-    it('Styling is not verified by automated tests. Please get a manual ✅ from me', () => {
-      assert.notInclude(wrapper.text(), 'Start', 'This exercise doesn\'t appear to have been started yet');
-    });
-
-    it('Adheres to ReactJS guidelines for generating repeating UI elements', () => {
-      const dataRows = wrapper.find(DataRow);
-
-      // We have keys defined at least
-      dataRows.forEach(node => { // eslint-disable-line
-        assert.isNull(node.key(), 'The `DataRow` component should not have a key prop');
-        assert.isDefined(node.parent().key(), 'The `DataRow` Wrapper component should have a key prop');
-      });
-
-      // The keys are unique
-      const keys = dataRows.map(node => node.parent().key());
-      const uniqKeys = [...new Set(keys)];
-
-      assert.equal(uniqKeys.length, rowData.length, 'Each key should be unique within the list');
     });
   }));
 

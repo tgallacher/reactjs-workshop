@@ -13,7 +13,7 @@ import styled, { css, cx } from 'react-emotion'; // REMOVE the imports which you
 import DataTableHeading from 'scenes/components/DataTable/DataTableHeading';
 import DataRow from '../03/02';
 
-// Exercise 04/02
+// Exercise 05/01
 // ===========
 //
 // Continuing to build on the last exercise, we will begin think about styling our data rows,
