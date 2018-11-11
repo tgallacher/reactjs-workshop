@@ -34,7 +34,7 @@ import DataRow from '../03/02';
 // ------
 // 🐨  Some ES6 features can help simplify the code you have to write; think about which ones might be able to help
 // 🐨  Some ReactJS good practices might be found in the console (NOTE: ReactJS only outputs these when using the ReactJS dev-build)
-class Row extends React.Component {
+class DataTable extends React.Component {
   render() {
     return (
       <div className="w-full">
@@ -45,7 +45,7 @@ class Row extends React.Component {
 }
 
 // Add runtime prop validation
-Row.propTypes = {
+DataTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     functions: PropTypes.arrayOf(PropTypes.string),
     sources: PropTypes.arrayOf(PropTypes.string),
@@ -55,4 +55,4 @@ Row.propTypes = {
   })),
 };
 
-export default Row;
+export default DataTable;
