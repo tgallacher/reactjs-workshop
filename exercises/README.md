@@ -11,6 +11,7 @@
 
 ## 03 - Conditional Rendering
 - `01` - Conditional rendering using JSX expressions
+- `02` - Conditional rendering: towards building the data table row component
 
 ## 04 - Lists & Keys,
 ## 06 - CSS-in-JSS
