@@ -37,6 +37,10 @@ import PropTypes from 'prop-types';
 // ------
 // 🐨  Use the `onMouseMove` Synthetic DOM event to capture the current X and Y coords of the mouse
 // 🐨  Remember, you HOC `props` are READ-ONLY, so you'll have to store the updates somewhere else to trigger a re-render
+//
+// 👩‍💻  Credit: Based on https://github.com/ReactTraining/react-workshop/
+// 🚫  Don't look at the solution! You're only cheating yourself.
+//
 export class App extends React.Component {
   render() {
     return (
