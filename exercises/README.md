@@ -25,16 +25,10 @@
 ## 07 - Render Props
 - `01` - onMouseMove
 
-## xx - Context API
-## xx - Compound Components
+## 08 - Context API
+- `01` - Basic example
 
+## xx - Compound Components
 ## xx - Action Creators & Reducers
 ## xx - Selectors
 ## xx - Sagas
-
-
-
-
-## 14 -
-## 15 -
-## 16 -
