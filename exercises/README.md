@@ -14,6 +14,8 @@
 - `02` - Conditional rendering: towards building the data table row component
 
 ## 04 - Lists & Keys,
+- `01` - Lists: building the Data table
+
 ## 06 - CSS-in-JSS
 
 ## 07 - HOCs
