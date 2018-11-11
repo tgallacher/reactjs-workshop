@@ -34,7 +34,7 @@ class Timer extends React.Component {
   render() {
     return (
       <div>
-        Update component
+        Start HERE!
       </div>
     );
   }

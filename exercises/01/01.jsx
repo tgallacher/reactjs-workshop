@@ -26,7 +26,7 @@ import React from 'react';
 function StatusBlock(props) {
   return (
     <div>
-      Add component implementation HERE!
+      Start HERE!
     </div>
   );
 }

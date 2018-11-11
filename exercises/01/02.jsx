@@ -43,7 +43,7 @@ function StatusBlock(props) {
 
   return (
     <div>
-      Add component HERE!
+      Start HERE!
     </div>
   );
 }

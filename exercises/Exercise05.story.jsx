@@ -64,7 +64,7 @@ function renderExercise01() {
     // Attendees are free to chose their own implementation approach using EmotionJS API
     // Too many DoF to account for; not worth the ROI
     it('Styling is not verified by automated tests. Please get a manual ✅ from me', () => {
-      assert.notInclude(wrapper.text(), 'Start', 'This exercise doesn\'t appear to have been started yet');
+      assert.notInclude(wrapper.text(), 'Start HERE!', 'This exercise doesn\'t appear to have been started yet');
     });
 
     it('Adheres to ReactJS guidelines for generating repeating UI elements', () => {
