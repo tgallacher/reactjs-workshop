@@ -21,4 +21,7 @@ const DataTableHeading = ({
   />
 );
 
+// Use display name API, so we can find it with Enzyme.
+DataTableHeading.displayName = 'DataTableHeading';
+
 export default DataTableHeading;

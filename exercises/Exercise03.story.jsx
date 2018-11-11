@@ -1,10 +1,14 @@
- /* eslint import/no-extraneous-dependencies: off, func-names: off, no-use-before-define: off */
+/* eslint
+  import/no-extraneous-dependencies: off,
+  no-use-before-define: off,
+  func-names: off,
+*/
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
 import { beforeEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import CenterContent from './CenterContent';
 import Exercise01 from './03/01';
