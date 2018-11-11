@@ -1,4 +1,6 @@
-/* eslint react/destructuring-assignment: off */
+/* eslint
+  react/destructuring-assignment: off,
+*/
 import React from 'react';
 
 // Exercise 01-01

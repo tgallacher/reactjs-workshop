@@ -1,5 +1,9 @@
-/* eslint no-nested-ternary: off */
+/* eslint
+  react/require-default-props: off,
+  no-nested-ternary: off,
+*/
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { sortArrayAlphabetically } from 'utils/misc';
 
@@ -59,5 +63,22 @@ const DataTableRow = ({
     </StatusColumn>
   </Wrapper>
 );
+
+DataTableRow.propTypes = {
+  statusSince: PropTypes.number,
+  className: PropTypes.string,
+  isHeading: PropTypes.bool,
+  functions: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
+  ]),
+  sources: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
+  ]),
+  status: PropTypes.string,
+  name: PropTypes.string,
+  team: PropTypes.string,
+};
 
 export default DataTableRow;

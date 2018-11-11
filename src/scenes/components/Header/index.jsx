@@ -1,8 +1,12 @@
-/* eslint no-nested-ternary: off */
+/* eslint
+  react/require-default-props: off,
+  no-nested-ternary: off,
+*/
 import React from 'react';
 import styled from 'react-emotion';
 import Select, { components } from 'react-select';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import {
   getNumberOfConsultantsInUnavailableState,
@@ -71,6 +75,19 @@ const sortOptions = [
 ];
 
 class Header extends React.Component {
+  static propTypes = {
+    numConsultantsUnavailable: PropTypes.number,
+    numConsultantsAvailable: PropTypes.number,
+    numConsultantsBusy: PropTypes.number,
+    getSelectedFilters: PropTypes.func,
+    dispatch: PropTypes.func,
+    options: PropTypes.shape({
+      functions: PropTypes.arrayOf(PropTypes.string),
+      sources: PropTypes.arrayOf(PropTypes.string),
+      teams: PropTypes.arrayOf(PropTypes.string),
+    }),
+  };
+
   // values: {label, value}[] -- current value(s) of select
   handleFilterChange = (values) => {
     const { dispatch } = this.props;

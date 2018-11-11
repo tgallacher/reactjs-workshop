@@ -1,4 +1,8 @@
+/* eslint
+  react/require-default-props: off,
+*/
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { getClassNameVariants } from './utils';
 
@@ -8,21 +12,11 @@ import StatusIcon from './StatusIcon';
 import Wrapper from './Wrapper';
 import Stat from './Stat';
 
-const VALID_STATUSES = [
-  'unavailable',
-  'available',
-  'busy',
-];
-
 /**
  * @see src/utils/status.js
  * @param {'available' | 'unavailable' | 'busy' } status
  */
 const SummaryBlock = ({ status = 'available', stat = 0 }) => {
-  if (! VALID_STATUSES.includes(status)) {
-    throw new Error('"status" should be one of: (available, unavailable, busy).');
-  }
-
   const classNames = getClassNameVariants(status);
 
   return (
@@ -35,6 +29,15 @@ const SummaryBlock = ({ status = 'available', stat = 0 }) => {
       </StatusContainer>
     </Wrapper>
   );
+};
+
+SummaryBlock.propTypes = {
+  status: PropTypes.oneOf([
+    'unavailable',
+    'available',
+    'busy',
+  ]),
+  stat: PropTypes.number,
 };
 
 export default SummaryBlock;

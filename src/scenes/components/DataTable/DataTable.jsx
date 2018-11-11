@@ -1,20 +1,12 @@
+/* eslint react/require-default-props: off */
 import React from 'react';
 import { List } from 'react-virtualized';
+import PropTypes from 'prop-types';
 
 import { css } from 'emotion';
 import DataTableHeading from './DataTableHeading';
 import DataTableRow from './DataTableRow';
 
-// Shape of 'rowData' === data[]
-// Shape of 'data' ===
-// {
-//  name: string,
-//  team: string,
-//  sources: string[],
-//  functions: string[],
-//  status: string,
-//  statusSince: number,
-// }
 const DataTable = ({ rowData = [] }) => (
   <section className="max-w-4xl mx-auto">
     <DataTableHeading className={css`margin-bottom: 0.5em;`} />
@@ -35,5 +27,16 @@ const DataTable = ({ rowData = [] }) => (
     />
   </section>
 );
+
+DataTable.propTypes = {
+  rowData: PropTypes.arrayOf(PropTypes.shape({
+    statusSince: PropTypes.number,
+    functions: PropTypes.arrayOf(PropTypes.string),
+    sources: PropTypes.arrayOf(PropTypes.string),
+    status: PropTypes.string,
+    name: PropTypes.string,
+    team: PropTypes.string,
+  })),
+};
 
 export default DataTable;
