@@ -59,9 +59,11 @@ function renderExercise01() {
     beforeEach(() => {
       wrapper = mount(component);
       ctxFn = sinon.fake();
-
-      mount(<ActiveContext.Consumer>{ctxFn}</ActiveContext.Consumer>);
       wrapper = mount(component);
+
+      if (ActiveContext != null) {
+        mount(<ActiveContext.Consumer>{ctxFn}</ActiveContext.Consumer>);
+      }
     });
 
     //
@@ -157,6 +159,12 @@ function renderExercise01() {
       ));
 
       assert.isTrue(liWrapper.find('li').hasClass('bg-teal-light'), 'Expected the active state to have a light TEAL bg');
+    });
+
+    it('ListItem: Does not rely on state stored in the DOM', () => {
+      const liWrapper = mount(<ListItem value="blah" index={0} />);
+
+      assert.notInclude(liWrapper.find('li').html(), 'data-index');
     });
   }));
 

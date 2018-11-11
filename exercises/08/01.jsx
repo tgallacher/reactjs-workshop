@@ -38,14 +38,13 @@ import List from './components/01-ListComponent';
 //        The `value` prop is the team name that the ListItem should render; its type is: string
 //        The `index` prop is the location in the list of this ListItem; its type is: number.
 //        All other required information should be obtained from the context API.
+// ✅    You should assign the context to a variable called `ActiveContext` (so the tests work)
 //
 // Tips
 // ------
 // 🐨   Use the `React.createContext` method to create your context components
-// 🐨   You can export and import anything that you need across the file/component modules!
+// 🐨   You should ensure you export / import all the components you need across all file/component modules!
 // 🐨   Don't forget to update each component's `propTypes` definition as you modify the props they support/require!
-export const ActiveContext = {};
-
 class App extends React.Component {
   static propTypes = {
     teamNames: PropTypes.string.isRequired,
