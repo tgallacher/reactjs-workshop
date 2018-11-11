@@ -36,7 +36,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Add component HERE!
+        Start HERE!
       </div>
     );
   }

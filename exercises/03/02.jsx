@@ -53,7 +53,7 @@ class Row extends React.Component {
   render() {
     return (
       <div className="flex">
-        Add code here
+        Start HERE!
       </div>
     );
   }

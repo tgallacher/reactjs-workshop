@@ -53,7 +53,11 @@ class StyledDataTable extends React.Component {
   render() {
     return (
       <div className="w-full">
-      Start by copying your component solution from Exercise 04/01 here
+        Start HERE!
+
+        <small className="block mt-5 italic">
+          Copy your component solution from Exercise 04/01!
+        </small>
       </div>
     );
   }
