@@ -1,4 +1,9 @@
-/* eslint react/destructuring-assignment: off, react/jsx-one-expression-per-line: off */
+/* eslint
+  react/jsx-one-expression-per-line: off,
+  react/prefer-stateless-function: off,
+  react/destructuring-assignment: off,
+  max-len: off,
+*/
 import React from 'react';
 
 // Exercise 02-01

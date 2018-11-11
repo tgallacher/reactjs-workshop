@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 class LiveTimeDifference extends React.Component {
   timerId = null;
@@ -39,5 +40,9 @@ class LiveTimeDifference extends React.Component {
     );
   }
 }
+
+LiveTimeDifference.propTypes = {
+  sinceTimestamp: PropTypes.number, // eslint-disable-line
+};
 
 export default LiveTimeDifference;

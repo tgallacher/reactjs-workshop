@@ -1,4 +1,6 @@
-/* eslint no-nested-ternary: off */
+/* eslint
+  react/require-default-props: off,
+*/
 import React from 'react';
 import PropTypes from 'prop-types';
 import { css, cx } from 'react-emotion';
@@ -52,10 +54,10 @@ const Wrapper = ({
 );
 
 Wrapper.propTypes = {
-  isHeading: PropTypes.bool.isRequired,
-  status: PropTypes.string.isRequired,
+  isHeading: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  status: PropTypes.string,
 };
 
 Wrapper.defaultProps = {

@@ -95,7 +95,7 @@ function RenderExercise01() {
       assert.include(
         functionsDataColumn.text(),
         functions.join(', '),
-        'Expected the `functions` prop to be rendered as a comma-separated list inside the `functions` data column'
+        'Expected the `functions` prop to be rendered as a comma-separated list inside the `functions` data column',
       );
     });
 
@@ -211,7 +211,7 @@ function RenderExercise02() {
       assert.include(
         dataColumn.text(),
         functions.join(', '),
-        'Expected the `functions` prop to be rendered as a comma-separated list inside the `functions` data column'
+        'Expected the `functions` prop to be rendered as a comma-separated list inside the `functions` data column',
       );
     });
 
@@ -251,7 +251,7 @@ function RenderExercise02() {
       assert.include(
         dataColumn.text(),
         sources.join(', '),
-        'Expected the `sources` prop to be rendered as a comma-separated list inside the `sources` data column'
+        'Expected the `sources` prop to be rendered as a comma-separated list inside the `sources` data column',
       );
     });
 
