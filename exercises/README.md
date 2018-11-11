@@ -22,7 +22,9 @@
 ## 06 - HOCs
 - `01` - onMouseMove
 
-## xx - Render Props
+## 07 - Render Props
+- `01` - onMouseMove
+
 ## xx - Context API
 ## xx - Compound Components
 
