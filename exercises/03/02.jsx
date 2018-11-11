@@ -10,15 +10,12 @@ import PropTypes from 'prop-types';
 
 import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 
-// Exercise 03/01
+// Exercise 03/02
 // ===========
 //
-// It's about the render. JS is not a strongly typed language, and so
-// we need to be defensive; all the time. That means, we need to make
-// sure our UIs can handle all possible branching with the incoming data.
-//
-// Here, we'll play around with JS and JSX expresions and how we can
-// conditionally render different UIs depending on our data.
+// This exercise extends beyond the previous exercise, where will add a few more
+// columns in our `Row` component. While the tasks might seem the exact same as before,
+// keep a close eye as there have been some tweaks to the requirements.
 //
 // Tasks
 // --------
@@ -33,7 +30,18 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // ✅    This `DataColumn` component should be given an `id` attribute, with the value `functions`
 // ✅    Your component should render the `funtions` prop if provided, and the string `-` if absent, or the array is empty
 //
-// ✅    Your component should render nothing if both `functions` and `team` props are missing
+// ✅    Your component should accept a `status` prop, with type string
+// ✅    Your component should handle the `status` prop exactly as it does the `team` prop
+// ✅    Your component should render the `status` prop if provided, and `Unknown Status` if absent
+//
+// ✅    Your component should accept a `name` prop, with type string
+// ✅    Your component should handle the `name` prop exactly as it does the `team` prop
+// ✅    Your component should render the `name` prop if provided, and `Unknown Consultant` if absent
+//
+// ✅    Your component should accept a `sources` prop, with type string[] (Array of strings)
+// ✅    Your component should handle the `sources` prop exactly as it does the `functions` prop
+//
+// ✅    Your component should render the Data columns in the following order: `name` | `team` | `functions` | `sources` | `status`
 //
 // 🚫   Specific styling of the component is not part of this exercise
 //
@@ -45,7 +53,7 @@ class Row extends React.Component {
   render() {
     return (
       <div className="flex">
-        Update HERE
+        Add code here
       </div>
     );
   }
@@ -53,8 +61,11 @@ class Row extends React.Component {
 
 // Add runtime prop validation
 Row.propTypes = {
-  team: PropTypes.string,
   functions: PropTypes.arrayOf(PropTypes.string),
+  sources: PropTypes.arrayOf(PropTypes.string),
+  status: PropTypes.string,
+  team: PropTypes.string,
+  name: PropTypes.string,
 };
 
 export default Row;
