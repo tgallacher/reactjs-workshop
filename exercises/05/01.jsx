@@ -41,23 +41,21 @@ import DataRow from '../03/02';
 //
 // Tips
 // ------
-// 🐨  The CSS-in-JS helpers have all been imported at the top. Use whichever method you prefer;
-//      Don't forget to remove the unused imports to keep our linter happy 👍
-// 🐨  Use the `rgba` helper from the `polished` library to convert HEX to RGBA, e.g. rgba(hexColor, opacityValue)
-//    @see https://polished.js.org/docs/#rgba for more details
-
+// 🐨   The CSS-in-JS helpers have all been imported at the top. Use whichever method you prefer;
+//        Don't forget to remove the unused imports to keep our linter happy 👍
+// 🐨   Use the `rgba` helper from the `polished` library to convert HEX to RGBA, e.g. rgba(hexColor, opacityValue)
+//        @see https://polished.js.org/docs/#rgba for more details
+// 🐨   EmotionJS (short) docs for reference: https://emotion.sh/
+// 🐨   If you prefer manipulating functional CSS utility classnames, you can use Tailwind as it is already part of the setup:
+//        @see https://tailwindcss.com/docs/
+//
 // CSS-in-JS Area
 // Add your CSS-in-JS components outside your component, here.
-
 class StyledDataTable extends React.Component {
   render() {
     return (
       <div className="w-full">
         Start HERE!
-
-        <small className="block mt-5 italic">
-          Copy your component solution from Exercise 04/01!
-        </small>
       </div>
     );
   }

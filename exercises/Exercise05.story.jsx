@@ -30,7 +30,7 @@ import Exercise01 from './05/01';
 //
 
 storiesOf('Exercises/05', module)
-  .add('01', renderExercise01);
+  .add('01 - CSS-in-JS (DataTableRow)', renderExercise01);
 
 //
 // Exercise 01
@@ -54,7 +54,7 @@ function renderExercise01() {
     </CenterContent>
   );
 
-  specs(() => describe('Exercise 05/01', () => {
+  specs(() => describe('01 - CSS-in-JS (DataTableRow)', () => {
     let wrapper;
 
     beforeEach(() => {
