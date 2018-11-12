@@ -7,8 +7,8 @@ import { assert } from 'chai';
 import { mount } from 'enzyme';
 
 import CenterContent from '../CenterContent';
-import Component01 from './01';
-import Component02 from './02';
+import Component01 from '../01/01';
+import Component02 from '../01/02';
 
 // STOP!
 // =====
