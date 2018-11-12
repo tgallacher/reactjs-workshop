@@ -30,7 +30,7 @@ import Exercise01 from './04/01';
 //
 
 storiesOf('Exercises/04', module)
-  .add('01', renderExercise01);
+  .add('01 - Lists: Towards the DataTableRow', renderExercise01);
 
 //
 // Exercise 01

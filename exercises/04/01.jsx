@@ -25,7 +25,7 @@ import DataRow from '../03/02';
 // ✅    Your component should output a heading row for our table; use the `DataTableHeading` component (no props) for this
 // ✅    Your component should output a `DataRow` for each entry in our object array, passing each prop from the object to our row component
 // ✅    Your component should adhere to ReactJs guidelines when generating repeating UI components
-// ✅    Your component should display the table heading component and the text 'No data to display' (inside a <div />), when the data prop being absent
+// ✅    Your component should display the table heading component and the text 'No data to display' (inside a <div />), when the data prop is absent
 //
 // 🚫   Specific styling of the component is not part of this exercise (that'll come later)
 // 🚫   Sorting, or chaning the order of the data is out of scope (that'll come later)
@@ -34,11 +34,12 @@ import DataRow from '../03/02';
 // ------
 // 🐨  Some ES6 features can help simplify the code you have to write; think about which ones might be able to help
 // 🐨  Some ReactJS good practices might be found in the console (NOTE: ReactJS only outputs these when using the ReactJS dev-build)
+// 🐨  The DataTable.propTypes (below) can be useful to summary the expected shape of your props
 class DataTable extends React.Component {
   render() {
     return (
       <div className="w-full">
-        Add code here
+        Start HERE!
       </div>
     );
   }
