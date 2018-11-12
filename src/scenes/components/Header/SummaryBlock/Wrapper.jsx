@@ -12,4 +12,6 @@ const Wrapper = ({ colorClassName = 'text-green-dark', ...props }) => (
   />
 );
 
+Wrapper.displayName = 'Wrapper';
+
 export default Wrapper;
