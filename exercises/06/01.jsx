@@ -16,10 +16,10 @@ import PropTypes from 'prop-types';
 // We will take a short diversion here and explore "HOCs", or Higher-Order-Components.
 // While the demo app doesn't define any HOCs directly, HOCs are one of the foundational advanced
 // concepts in ReactJS, and can help abstract cross-cutting concerns across several components.
-// They are also part of one of ReactJS powerhouse features: Composability.
+// They are also one of ReactJS powerhouse features: Composability.
 //
-// Although, while we won't define any inside the demo app, we will be using one heavily when
-// we explore Redux.
+// Although, while we won't define any inside the demo app, we will be using -- arguably the most
+// popular -- one heavily when we explore Redux.
 //
 // Tasks
 // --------
@@ -39,12 +39,10 @@ import PropTypes from 'prop-types';
 // 🐨  Remember, you HOC `props` are READ-ONLY, so you'll have to store the updates somewhere else to trigger a re-render
 //
 // 👩‍💻  Credit: Based on https://github.com/ReactTraining/react-workshop/
-// 🚫  Don't look at the solution! You're only cheating yourself.
-//
 export class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="">
         Start HERE!
       </div>
     );
@@ -60,16 +58,12 @@ App.propTypes = {
 };
 
 // Define our HOC
-function withMouse(Component) {
-  return class extends React.Component {
-    render() {
-      return (
-        <div>
-          Start HERE (HOC)!
-        </div>
-      );
-    }
-  };
+function withMouse() {
+  return (
+    <div>
+      Start HERE (HOC)!
+    </div>
+  );
 }
 
-export default withMouse(App);
+export default App;
