@@ -25,11 +25,11 @@ import Exercise01, { MousePosition } from './07/01';
 // In general, files ending with /*.story.jsx$/i are not expected to be changed
 // as part of the exercises.
 //
-// @see: All files inside './05/*' instead.
+// @see: All files inside '../07/*' instead.
 //
 
 storiesOf('Exercises/07', module)
-  .add('01', renderExercise01);
+  .add('01 - Render props', renderExercise01);
 
 //
 // Exercise 01
@@ -44,7 +44,7 @@ function renderExercise01() {
     </CenterContent>
   );
 
-  specs(() => describe('01', () => {
+  specs(() => describe('01 - Render props', () => {
     let renderPropFn;
     let wrapper;
     let mpWrapper;
@@ -58,8 +58,12 @@ function renderExercise01() {
 
     afterEach(() => {
       sinon.restore();
-      wrapper.unmount();
-      wrapper = null;
+
+      if (wrapper) {
+        wrapper.unmount();
+
+        wrapper = null;
+      }
     });
 
     //

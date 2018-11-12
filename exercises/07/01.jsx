@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
 // Now let's look at an alternative component pattern which can also be used to cross-cut concerns
 // between child components, namely the "Render Prop" pattern. While the demo app doesn't currently
 // define any Render Props directly, the Render Prop pattern is one of the most important patterns
-// which are in use today for abstracting and reusing compnent state/logic.
+// which is in use today for abstracting and reusing component state/logic.
 //
 // We will repeat the HOC exercise on capturing and displaying the current mouse position, but this
 // time, instead of using a HOC, we'll use a render prop.
@@ -35,14 +35,12 @@ import PropTypes from 'prop-types';
 //
 // Tips
 // ------
-// 🐨  Use the `onMouseMove` Synthetic DOM event to capture the current X and Y coords of the mouse
-// 🐨  You solution to the HOC exercise could be a good starting point
+// 🐨   Use the `onMouseMove` Synthetic DOM event to capture the current X and Y coords of the mouse, as before
+// 🐨   Your solution to the HOC exercise could be a good starting point
 export class MousePosition extends React.Component {
   render() {
     return (
-      <div>
-        Start HERE (Render Prop Component)!
-      </div>
+      null
     );
   }
 }
@@ -69,3 +67,4 @@ class App extends React.Component {
 App.propTypes = {};
 
 export default App;
+
