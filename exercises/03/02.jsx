@@ -53,7 +53,7 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 class Row extends React.Component {
   render() {
     return (
-      <div className="flex w-4/5 mx-auto">
+      <div className="flex w-full">
         Start HERE!
       </div>
     );
