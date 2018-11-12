@@ -8,13 +8,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
-import { beforeEach, afterEach, after } from 'storybook-addon-specifications/dist/preview';
+import { beforeEach, afterEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
 
-import CenterContent from './CenterContent';
-import Exercise01, { MousePosition } from './07/01';
+import CenterContent from '../CenterContent';
+import Exercise01, { MousePosition } from '../07/01';
 
 // STOP!
 // =====
