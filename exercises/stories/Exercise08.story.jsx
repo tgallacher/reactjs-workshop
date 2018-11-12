@@ -13,10 +13,10 @@ import { assert } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
 
-import CenterContent from './CenterContent';
-import Exercise01, { ActiveContext } from './08/01';
-import ListItem from './08/components/01-ListItemComponent';
-import List from './08/components/01-ListComponent';
+import CenterContent from '../CenterContent';
+import Exercise01, { ActiveContext } from '../08/01';
+import ListItem from '../08/components/01-ListItemComponent';
+import List from '../08/components/01-ListComponent';
 
 // STOP!
 // =====
@@ -27,7 +27,7 @@ import List from './08/components/01-ListComponent';
 // In general, files ending with /*.story.jsx$/i are not expected to be changed
 // as part of the exercises.
 //
-// @see: All files inside './05/*' instead.
+// @see: All files inside '../08/*' instead.
 //
 
 storiesOf('Exercises/08', module)
