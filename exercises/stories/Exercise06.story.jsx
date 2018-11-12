@@ -13,8 +13,8 @@ import { assert } from 'chai';
 import { mount } from 'enzyme';
 import { css, cx } from 'emotion';
 
-import CenterContent from './CenterContent';
-import Exercise01, { App as Exercise01RawComponent } from './06/01';
+import CenterContent from '../CenterContent';
+import Exercise01, { App as Exercise01RawComponent } from '../06/01';
 
 // STOP!
 // =====
@@ -25,7 +25,7 @@ import Exercise01, { App as Exercise01RawComponent } from './06/01';
 // In general, files ending with /*.story.jsx$/i are not expected to be changed
 // as part of the exercises.
 //
-// @see: All files inside './05/*' instead.
+// @see: All files inside '../06/*' instead.
 //
 
 storiesOf('Exercises/06', module)
