@@ -13,8 +13,8 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // Exercise 03/02
 // ===========
 //
-// This exercise extends beyond the previous exercise, where will add a few more
-// columns in our `Row` component. While the tasks might seem the exact same as before,
+// This exercise extends the previous exercise, where will add a few more columns in
+// our `Row` component. While the tasks might seem the exactly the same as before,
 // keep a close eye as there have been some tweaks to the requirements.
 //
 // Tasks
@@ -49,10 +49,11 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // ------
 // 🐨  The array helper, `Array.isArray` could prove useful here
 // 🐨  Remember, `undefined` is a special object in JS, which you can use to 'short-circuit' some expressions
+// 🐨  The Row.propTypes (below) can be useful to summary the expected shape of your props
 class Row extends React.Component {
   render() {
     return (
-      <div className="flex">
+      <div className="flex w-4/5 mx-auto">
         Start HERE!
       </div>
     );

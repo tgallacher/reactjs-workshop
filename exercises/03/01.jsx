@@ -13,12 +13,16 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // Exercise 03/01
 // ===========
 //
-// It's about the render. JS is not a strongly typed language, and so
-// we need to be defensive; all the time. That means, we need to make
-// sure our UIs can handle all possible branching with the incoming data.
+// Here it's all about the render. As you know, JS is not a strongly typed language. And so
+// we need to be defensive; all the time. That means, we need to make sure our UIs can handle
+// all possible branching with the incoming data. JS/X gives us the power to do that out of
+// the box.
 //
-// Here, we'll play around with JS and JSX expresions and how we can
-// conditionally render different UIs depending on our data.
+// Here, we'll play around with JS/X expresions and how we can conditionally adjust our component
+// rendering based on different data structures that might come in via props.
+//
+// We will be using an imported component to help us with rendering; see the `DataColumn` import
+// statement at the top of this file.
 //
 // Tasks
 // --------
@@ -44,7 +48,7 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 class Row extends React.Component {
   render() {
     return (
-      <div className="flex">
+      <div className="flex w-1/4">
         Start HERE!
       </div>
     );

@@ -27,8 +27,8 @@ import Exercise02 from './03/02';
 //
 
 storiesOf('Exercises/03', module)
-  .add('01', RenderExercise01)
-  .add('02', RenderExercise02);
+  .add('01 - Conditional rendering', RenderExercise01)
+  .add('02 - Begin the DataTableRow', RenderExercise02);
 
 //
 // Exercise 01
@@ -48,7 +48,7 @@ function RenderExercise01() {
     </CenterContent>
   );
 
-  specs(() => describe('Exercise 03/01', () => {
+  specs(() => describe('01 - Conditional rendering', () => {
     let wrapper;
 
     beforeEach(() => {
@@ -162,7 +162,7 @@ function RenderExercise02() {
     />
   );
 
-  specs(() => describe('Exercise 03/01', () => {
+  specs(() => describe('02 - Begin the DataTableRow', () => {
     let wrapper;
 
     beforeEach(() => {
