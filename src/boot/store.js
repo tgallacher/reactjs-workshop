@@ -34,12 +34,12 @@ const store = createStore(
 sagaMiddleware.run(rootSaga);
 
 // Enable Webpack hot module replacement for reducers
-// if (module.hot) {
-//   module.hot.accept('./reducer', () => {
-//     const nextReducer = require('./reducer');
+if (module.hot) {
+  module.hot.accept('./reducer', () => {
+    const nextReducer = require('./reducer'); // eslint-disable-line
 
-//     store.replaceReducer(nextReducer);
-//   });
-// }
+    store.replaceReducer(nextReducer);
+  });
+}
 
 export default store;
