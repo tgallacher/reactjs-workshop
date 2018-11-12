@@ -3,7 +3,9 @@
   react/jsx-one-expression-per-line: off,
   react/prefer-stateless-function: off,
   react/require-default-props: off,
+  react/no-unused-state: off,
   react/no-multi-comp: off,
+  react/sort-comp: off,
   max-len: off,
 */
 import React from 'react';
@@ -17,13 +19,13 @@ import List from './components/01-ListComponent';
 // React's context API is a powerful tool in our bag of tricks for abstracting and sharing state across our components.
 // The context API also provides a streamlined mechanism for sharing this state across a deep DOM tree, without redundant
 // prop/concern "leaks". Although, caution should be taken -- as discussed during the presentation -- that while powerful,
-// the context API can limit the composability of components, and so other options should be weighed in order to choose
+// the context API can limit the composability of components, and so other options should be weighed first in order to choose
 // the right tool of the job.
 //
 // In this example, we will take a look at a slight deviation from the demo app, where we will render a list of team names,
 // with one of the items in the list being considered and highlighted as the "active" item. The styling of this item will
 // differ from the rest. We also include functionality so that we can change which item is active by clicking on the desired
-// item. Here, we will explore how the context API can simplify our component architecture.
+// item. Here, we will explore how the context API can significantly simplify our component architecture.
 //
 // Tasks
 // --------
@@ -33,12 +35,12 @@ import List from './components/01-ListComponent';
 //        (newActiveIndex: number) => void
 // ✅    Your context provider should default the `activeIndex` to 0.
 // ✅    Your context provider should default the `handleUpdateIndex` to an empty function, that when called does nothing.
+// ✅    You should assign the context to a variable called `ActiveContext` (so the tests work)
 // ✅    The `List` component should only accept 1 prop, the `values` prop, which contains the team names (type: string[])
 // ✅    The `ListItem` component should accept 2 props, the `value` prop and the `index` prop
 //        The `value` prop is the team name that the ListItem should render; its type is: string
 //        The `index` prop is the location in the list of this ListItem; its type is: number.
 //        All other required information should be obtained from the context API.
-// ✅    You should assign the context to a variable called `ActiveContext` (so the tests work)
 //
 // Tips
 // ------
@@ -47,7 +49,7 @@ import List from './components/01-ListComponent';
 // 🐨   Don't forget to update each component's `propTypes` definition as you modify the props they support/require!
 class App extends React.Component {
   static propTypes = {
-    teamNames: PropTypes.string.isRequired,
+    teamNames: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
   state = {
@@ -65,7 +67,7 @@ class App extends React.Component {
       <div>
         <h2>Team names</h2>
 
-        <p>Select an item to make it active.</p>
+        <p>Select a team to make it active.</p>
 
         <List
           handleClick={this.handleClick}

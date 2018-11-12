@@ -8,7 +8,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
-import { beforeEach, afterEach, after } from 'storybook-addon-specifications/dist/preview';
+import { beforeEach, afterEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
@@ -31,7 +31,7 @@ import List from './08/components/01-ListComponent';
 //
 
 storiesOf('Exercises/08', module)
-  .add('01', renderExercise01);
+  .add('01 - Context API', renderExercise01);
 
 //
 // Exercise 01
@@ -52,7 +52,7 @@ function renderExercise01() {
     </CenterContent>
   );
 
-  specs(() => describe('01', () => {
+  specs(() => describe('01 - Context API', () => {
     let wrapper;
     let ctxFn;
 
@@ -63,6 +63,16 @@ function renderExercise01() {
 
       if (ActiveContext != null) {
         mount(<ActiveContext.Consumer>{ctxFn}</ActiveContext.Consumer>);
+      }
+    });
+
+    afterEach(() => {
+      sinon.restore();
+
+      if (wrapper) {
+        wrapper.unmount();
+
+        wrapper = null;
       }
     });
 
