@@ -21,7 +21,6 @@ module.exports = {
     development: {
       plugins: [
         ['babel-plugin-emotion', { sourceMap: true, autoLabel: true }],
-        'react-hot-loader/babel',
       ],
     },
     test: {
