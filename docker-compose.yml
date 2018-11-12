@@ -1,0 +1,53 @@
+version: '3.5'
+services:
+  setup:
+    image: node:10
+    container_name: rw_setup
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - type: bind
+        source: .
+        target: /home/node/app
+    working_dir: /home/node/app
+    command: "npm install"
+
+  frontend:
+    image: node:10
+    container_name: rw_frontend
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - type: bind
+        source: .
+        target: /home/node/app
+    ports:
+      - "6006:6006"
+    working_dir: /home/node/app
+    command: "npm run-script storybook:dev -- --ci --quiet"
+    links:
+      - "backend"
+
+  backend:
+    image: node:10
+    container_name: rw_backend
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
+    volumes:
+      - type: bind
+        source: .
+        target: /home/node/app
+    working_dir: /home/node/app
+    command: "npm run-script server:dev -- --quiet --host 0.0.0.0"
+
+  app:
+    # Don't actually use anything here; just bootstrap required services.
+    # We do this to avoid running the setup command everytime.
+    # We could do that, but this is quicker...
+    image: node:10
+    container_name: rw_bootstrap
+    links:
+      - frontend
+      - backend
