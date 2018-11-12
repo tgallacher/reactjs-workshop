@@ -23,7 +23,4 @@ module.exports = merge.smart(common, {
       },
     ],
   },
-  devServer: {
-    hot: true,
-  },
 });

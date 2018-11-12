@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import { hot } from 'react-hot-loader' // eslint-disable-line
 
 import { getConsultants } from 'consultants/selectors';
 import DataTable from './DataTable';
@@ -11,6 +10,4 @@ const mapStateToProps = state => ({
   rowData: getConsultants(state),
 });
 
-const ConnectedApp = connect(mapStateToProps)(DataTable);
-
-export default hot(module)(ConnectedApp);
+export default connect(mapStateToProps)(DataTable);
