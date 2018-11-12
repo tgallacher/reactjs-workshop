@@ -12,10 +12,10 @@ import { beforeEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
 import { mount } from 'enzyme';
 
-import DataRow from './03/02';
+import DataRow from '../03/02';
 
-import CenterContent from './CenterContent';
-import Exercise01 from './04/01';
+import CenterContent from '../CenterContent';
+import Exercise01 from '../04/01';
 
 // STOP!
 // =====
