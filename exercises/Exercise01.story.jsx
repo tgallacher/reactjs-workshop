@@ -2,15 +2,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
-import { beforeEach } from 'storybook-addon-specifications/dist/preview';
+import { beforeEach, afterEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
 import { mount } from 'enzyme';
-
-import StatusContainer from 'scenes/components/Header/SummaryBlock/StatusContainer';
-import StatusLabel from 'scenes/components/Header/SummaryBlock/StatusLabel';
-import StatusIcon from 'scenes/components/Header/SummaryBlock/StatusIcon';
-import Wrapper from 'scenes/components/Header/SummaryBlock/Wrapper';
-import Stat from 'scenes/components/Header/SummaryBlock/Stat';
 
 import CenterContent from './CenterContent';
 import Component01 from './01/01';
@@ -29,8 +23,8 @@ import Component02 from './01/02';
 //
 
 storiesOf('Exercises/01', module)
-  .add('01', RenderExercise01)
-  .add('02', RenderExercise02);
+  .add('01 - React Element Basics', RenderExercise01)
+  .add('02 - React Components', RenderExercise02);
 
 
 //
@@ -44,30 +38,37 @@ function RenderExercise01() {
     </CenterContent>
   );
 
-  specs(() => describe('Exercise 01-01', () => {
-    let output;
+  specs(() => describe('01 - React Element Basics', () => {
+    let wrapper;
 
     beforeEach(() => {
-      output = mount(component);
+      wrapper = mount(component);
+    });
+
+    afterEach(() => {
+      if (wrapper) {
+        wrapper.unmount();
+        wrapper = null;
+      }
     });
 
     it('Should render the status label', () => {
       assert.include(
-        output.text(),
-        'Available',
+        wrapper.text().toLowerCase(),
+        'available',
         'The status could not be found in the component output',
       );
     });
 
     it('Should render the stat value', () => {
-      assert.include(output.text(), '26', 'The statistic value could not be found in the component output');
+      assert.include(wrapper.text(), '26', 'The statistic value could not be found in the component output');
     });
 
     it('Should render one status icon', () => {
       let found = 0;
 
-      found += output.find('.fas').length;
-      found += output.find('.far').length;
+      found += wrapper.find('.fas').length;
+      found += wrapper.find('.far').length;
 
       assert.equal(found, 1, 'Did not find one of the expected icon class names');
     });
@@ -87,17 +88,24 @@ function RenderExercise02() {
     </CenterContent>
   );
 
-  specs(() => describe('Exercise 01-02', () => {
-    let output;
+  specs(() => describe('02 - React Components', () => {
+    let wrapper;
 
     beforeEach(() => {
-      output = mount(component);
+      wrapper = mount(component);
+    });
+
+    afterEach(() => {
+      if (wrapper) {
+        wrapper.unmount();
+        wrapper = null;
+      }
     });
 
     it('Should render the status label using the <StatusLabel /> component', () => {
-      const node = output.find(StatusLabel);
+      const node = wrapper.find('StatusLabel');
 
-      assert.equal(node.length, 1, 'You should use the <StatusLabel /> component once');
+      assert.lengthOf(node, 1, 'You should use the <StatusLabel /> component once');
       assert.include(
         node.text(),
         'Available',
@@ -106,29 +114,27 @@ function RenderExercise02() {
     });
 
     it('Should render the statistic value using the <Stat /> component', () => {
-      const node = output.find(Stat);
+      const node = wrapper.find('Stat');
 
-      assert.equal(node.length, 1, 'You should use the <Stat /> component once');
+      assert.lengthOf(node, 1, 'You should use the <Stat /> component once');
       assert.include(node.text(), '92', 'The statistic value could not be found from the <Stat /> component output');
     });
 
     it('Renders with the correct layout (approx.)', () => {
-      let node = output.find(Wrapper);
+      let node = wrapper.find('Wrapper');
 
-      assert.equal(node.length, 1, 'Could not find the <Wrapper /> component');
+      assert.lengthOf(node, 1, 'Could not find the <Wrapper /> component');
 
-      node = output.find(StatusContainer);
-      assert.equal(node.length, 1, 'Could not find the <StatusContiner /> component');
+      node = wrapper.find('StatusContainer');
+      assert.lengthOf(node, 1, 'Could not find the <StatusContiner /> component');
     });
 
     it('Should render one status icon using the <StatusIcon /> component', () => {
-      const node = output.find(StatusIcon);
+      const node = wrapper.find('StatusIcon');
 
-      assert.equal(node.length, 1, 'You should use the <StatusIcon /> component for rendering the status icon');
-      const props = node.props();
-
+      assert.lengthOf(node, 1, 'You should use the <StatusIcon /> component for rendering the status icon');
       assert.propertyVal(
-        props,
+        node.props(),
         'iconClassName',
         'far fa-user',
         'The <StatusIcon /> component did not have the expected prop value',
