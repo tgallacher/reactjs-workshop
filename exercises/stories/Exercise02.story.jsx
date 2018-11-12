@@ -7,10 +7,10 @@ import { assert } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
 
-import CenterContent from './CenterContent';
-import Exercise01 from './02/01';
-import Exercise02 from './02/02';
-import Exercise03 from './02/03';
+import CenterContent from '../CenterContent';
+import Exercise01 from '../02/01';
+import Exercise02 from '../02/02';
+import Exercise03 from '../02/03';
 
 
 // STOP!
