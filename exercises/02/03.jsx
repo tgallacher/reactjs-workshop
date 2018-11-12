@@ -7,13 +7,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Exercise 02-03
+// Exercise 02/03
 // ===========
 //
 // Component lifecycle methods. Using a stateful component, how can we
 // leverage the component lifecycle to control behaviour?
 //
-// We're going to create a smaller version of the `LiveTimerDifference`
+// We're going to create a simplified version of the `LiveTimerDifference`
 // component where we use component lifecycle methods to create a live timer
 // display.
 //
@@ -22,8 +22,8 @@ import PropTypes from 'prop-types';
 // --------
 // ✅    Your component should accept an OPTIONAL prop, 'datetimestamp' whose value is a Unix timestamp.
 // ✅    Your component should initialise a 'state' object
-// ✅    Your component's state object should contain a 'date' node
-// ✅    Your component's state object should initialise the 'date' node to either
+// ✅    Your component's state object should contain a 'timestamp' node
+// ✅    Your component's state object should initialise the 'timestamp' node to either
 //        the `datetimestamp` prop, or a `now` data object.
 // ✅    Your component should render an input DOM element to accept text input from the user
 // ✅    Your component should re-render the time display after every second
