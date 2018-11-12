@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
 import { beforeEach, afterEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import sinon from 'sinon';
 
 import CenterContent from './CenterContent';
@@ -26,28 +26,28 @@ import Exercise03 from './02/03';
 //
 
 storiesOf('Exercises/02', module)
-  .add('01', RenderExercise01)
-  .add('02', RenderExercise02)
-  .add('03', RenderExercise03);
+  .add('01 - State & Event handling', RenderExercise01)
+  .add('02 - Controlled Components', RenderExercise02)
+  .add('03 - Lifecycle methods', RenderExercise03);
 
 
 // Run exercise specs which are shared between exercises.
-function runExerciseSpecsWithDefaultSpecs(component, exercise, additionalSpecs) {
-  specs(() => describe(`Exercise ${exercise}`, () => {
-    let mounted;
+function runExerciseSpecsWithDefaultSpecs(component, exerciseName, additionalSpecs) {
+  specs(() => describe(exerciseName, () => {
+    let wrapper;
 
     beforeEach(() => {
-      mounted = mount(component);
+      wrapper = mount(component);
     });
 
     it('Should render an input element', () => {
-      const node = mounted.find('input');
+      const node = wrapper.find('input');
 
       assert.equal(node.length, 1, 'Could not find an <input /> element');
     });
 
     it('Should initialise state to an empty string', () => {
-      const state = mounted.state();
+      const state = wrapper.state();
 
       assert.property(state, 'team', 'Expected the state to contain the key, "team"');
       assert.strictEqual(state.team, '', 'Expected the default state for "team" to be an empty string');
@@ -56,28 +56,32 @@ function runExerciseSpecsWithDefaultSpecs(component, exercise, additionalSpecs) 
     it('Should render the team name from state', () => {
       const team = 'foobar';
 
-      mounted.setState({ team });
+      wrapper.setState({ team });
 
       assert.notInclude(
-        mounted.find('input').text(), team,
+        wrapper.find('input').text(), team,
         'Did not expect the input element to be a "controlled" component',
       );
 
-      assert.include(mounted.text(), team, 'Expected the value in state to be part of the component\'s output');
+      assert.include(wrapper.text(), team, 'Expected the value in state to be part of the component\'s output');
 
       // reset
-      mounted.setState({ team: '' });
+      wrapper.setState({ team: '' });
     });
 
     it('Should update the team name when the input value changes', () => {
-      const input = mounted.find('input');
+      const input = wrapper.find('input');
 
       if (input.length === 0) {
         throw new Error('could not find input in component output; test failed to continue');
       }
 
       input.simulate('change', { target: { value: 'foo' } });
-      assert.strictEqual(mounted.state().team, 'foo', 'Expected the "team" key in state to have been updated');
+      assert.strictEqual(
+        wrapper.state().team,
+        'foo',
+        'Expected the "team" key in state to have been updated; possibly check your choice of DOM event handler',
+      );
     });
 
     if (additionalSpecs !== undefined) {
@@ -97,7 +101,7 @@ function RenderExercise01() {
     </CenterContent>
   );
 
-  runExerciseSpecsWithDefaultSpecs(component, '02-01');
+  runExerciseSpecsWithDefaultSpecs(component, '01 - State & Event handling');
 
   return story;
 }
@@ -115,18 +119,18 @@ function RenderExercise02() {
 
   runExerciseSpecsWithDefaultSpecs(component, '02-02', () => {
     it('Renders the input component as a controlled component', () => {
-      const mounted = mount(component);
+      const wrapper = mount(component);
       const team = 'foobar';
 
-      mounted.setState({ team });
+      wrapper.setState({ team });
 
       assert.include(
-        mounted.find('input').prop('value'), team,
+        wrapper.find('input').prop('value'), team,
         'Expected the input element to be a "controlled" component',
       );
 
       // reset
-      mounted.setState({ team: '' });
+      wrapper.setState({ team: '' });
     });
   });
 
@@ -144,8 +148,8 @@ function RenderExercise03() {
     </CenterContent>
   );
 
-  specs(() => describe('Exercise 02-03', () => {
-    let mounted;
+  specs(() => describe('03 - Lifecycle methods', () => {
+    let wrapper;
 
     beforeEach(() => {
       if ('componentDidMount' in Exercise03.prototype) {
@@ -158,19 +162,26 @@ function RenderExercise03() {
       sinon.spy(global, 'setInterval');
       sinon.spy(global, 'clearInterval');
 
-      mounted = mount(component);
+      wrapper = mount(component);
     });
 
     afterEach(() => {
-      if ('componentDidMount' in Exercise03.prototype) {
-        Exercise03.prototype.componentDidMount.restore();
-      }
-      if ('componentWillUnmount' in Exercise03.prototype) {
-        Exercise03.prototype.componentWillUnmount.restore();
-      }
+      // if ('componentDidMount' in Exercise03.prototype) {
+      //   Exercise03.prototype.componentDidMount.restore();
+      // }
+      // if ('componentWillUnmount' in Exercise03.prototype) {
+      //   Exercise03.prototype.componentWillUnmount.restore();
+      // }
 
-      global.setInterval.restore();
-      global.clearInterval.restore();
+      // global.setInterval.restore();
+      // global.clearInterval.restore();
+
+      if (wrapper && wrapper.length > 0) {
+        wrapper.unmount();
+
+        wrapper = null;
+      }
+      sinon.restore();
     });
 
     it('Implements mount lifecycle method and it is executed', () => {
@@ -187,7 +198,7 @@ function RenderExercise03() {
     });
 
     it('Implements a unmount lifecycle method and it is executed', () => {
-      mounted.unmount();
+      wrapper.unmount();
       assert.propertyVal(
         Exercise03.prototype.componentWillUnmount,
         'callCount',
@@ -197,12 +208,12 @@ function RenderExercise03() {
     });
 
     it('Clears the timer interval to preserve memory leakage', () => {
-      mounted.unmount();
+      wrapper.unmount();
       assert.propertyVal(clearInterval, 'callCount', 1, 'No clear timer interval found');
     });
 
     it('Stores the date timestamp inside the component\'s state as a JS Date object', () => {
-      assert(mounted.state().timestamp instanceof Date, 'Instance of Date');
+      assert(wrapper.state().timestamp instanceof Date, 'Instance of Date');
     });
 
     it('Accepts an optional datetimestamp prop to use as the intiial timestamp', () => {

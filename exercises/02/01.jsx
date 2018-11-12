@@ -6,16 +6,13 @@
 */
 import React from 'react';
 
-// Exercise 02-01
+// Exercise 02/01
 // ===========
 //
-// The focus on this exercise is to set and get data from within
-// a stateful component.
+// The focus on this exercise is to manipulate local component state.
+// In the next exercises, we will build this example to showcase some key
+// patterns/usages of stateful components.
 //
-// We are going to focus more on component usage, but pulling in
-// components used in the demo app. We'll attempt to reconstruct
-// the status summar icon blocks, which display a statistic alongside
-// the consultant status.
 //
 // Tasks
 // --------
@@ -40,7 +37,7 @@ import React from 'react';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="w-1/4">
         Start HERE!
       </div>
     );
