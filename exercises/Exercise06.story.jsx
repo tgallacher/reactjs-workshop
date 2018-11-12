@@ -29,7 +29,7 @@ import Exercise01, { App as Exercise01RawComponent } from './06/01';
 //
 
 storiesOf('Exercises/06', module)
-  .add('01', renderExercise01);
+  .add('01 - HOCs', renderExercise01);
 
 //
 // Exercise 01
@@ -44,7 +44,7 @@ function renderExercise01() {
     </CenterContent>
   );
 
-  specs(() => describe('Exercise 06/01', () => {
+  specs(() => describe('01 - HOCs', () => {
     let wrapper;
 
     beforeEach(() => {
