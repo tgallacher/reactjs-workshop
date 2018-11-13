@@ -23,6 +23,7 @@ import React from 'react';
 // ✅    Your component should render an input DOM element to accept text input from the user
 // ✅    Your component should update the 'state.team' with the text provided by the user
 // ✅    Your component should render the team name from state, as it is updated
+// ✅    Your event data should come from `event.target` -- not `event.currentTarget` -- as the test suite doesn't offer that simulation
 //
 //
 // Tips
