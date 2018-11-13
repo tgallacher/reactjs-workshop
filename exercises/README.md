@@ -15,7 +15,7 @@ Below is a summary of the exercises which have been created.
 - `01` - Conditional rendering using JSX expressions
 - `02` - Conditional rendering: towards building the data table row component
 
-### 04 - Lists & Keys,
+### 04 - Lists & Keys
 - `01` - Lists: building the Data table
 
 ### 05 - CSS-in-JSS
@@ -31,6 +31,6 @@ Below is a summary of the exercises which have been created.
 - `01` - Basic example
 
 <!-- ### xx - Compound Components
-### xx - Action Creators & Reducers
-### xx - Selectors
-### xx - Sagas -->
+### xx - Redux Action Creators & Reducers
+### xx - Redux Selectors
+### xx - Redux Sagas -->
