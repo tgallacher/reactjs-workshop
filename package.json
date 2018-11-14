@@ -8,7 +8,7 @@
     "storybook": "cross-env NODE_ENV=production build-storybook --config-dir ./.storybook",
     "storybook:dev": "cross-env NODE_ENV=development start-storybook --config-dir ./.storybook -p 6006",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.js",
-    "server:dev": "json-server --read-only db.json",
+    "server:dev": "json-server --read-only __db.json",
     "build:dev": "cross-env NODE_ENV=development webpack --config ./webpack.dev.js",
     "lint": "eslint --ext .js --ext .jsx --config ./.eslintrc.js --ignore-pattern /node_modules/ ."
   },
@@ -71,6 +71,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "faker": "^4.1.0",
     "jest": "^23.6.0",
     "sinon": "^7.1.1",
     "storybook-addon-specifications": "^2.1.2",
