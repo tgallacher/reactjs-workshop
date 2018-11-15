@@ -28,9 +28,16 @@ Below is a summary of the exercises which have been created.
 - `01` - onMouseMove
 
 ### 08 - Context API
-- `01` - Basic example
+- `01` - Active lists
 
-<!-- ### xx - Compound Components
-### xx - Redux Action Creators & Reducers
-### xx - Redux Selectors
-### xx - Redux Sagas -->
+### 09 - Redux Basics
+- `01` - Action Creators + Reducers'
+
+### 10 - React Redux + mapStateToProps
+- `01` -
+
+### 11 - Redux Selectors
+- `01` -
+
+### 12 - Redux Sagas Middleware
+- `01` -
