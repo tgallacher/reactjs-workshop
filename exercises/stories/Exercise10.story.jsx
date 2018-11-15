@@ -28,7 +28,7 @@ import App, { mapStateToProps } from '../10/components/01-App';
 // In general, files ending with /*.story.jsx$/i are not expected to be changed
 // as part of the exercises.
 //
-// @see: All files inside '../08/*' instead.
+// @see: All files inside '../10/*' instead.
 //
 
 storiesOf('Exercises/10', module)
