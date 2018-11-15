@@ -25,8 +25,10 @@ import { createStore } from 'redux';
 //        This should have the type: CONSULTANTS_FETCH_COMPLETE (already defined below).
 //        This action creator should accept a single input arg, which will be an array of consultant data.
 //        This input arg should be stored within the action at `payload.data`.
+//        The action should indicate if an error occurred using the appropriate FSA key
+//        The action should include the error within the payload object on `data` when one is passed.
 //
-// ✅    All actions should default their unused object keys to null, if they don't have any data.
+// ✅    Unless instructed otherwise, All actions should default their unused object keys to null when they don't have any data.
 // ✅    You All actions should adhere to the FSA object structure.
 //
 // ✅    Complete the `reducer` using the stub below.
@@ -41,7 +43,7 @@ import { createStore } from 'redux';
 //
 // Tips
 // --------
-//
+// 🐨    Remember, FSA stands for "Flux Standard Action"
 
 // Define our Action type constants
 export const CONSULTANTS_FETCH_REQUEST = 'CONSULTANTS.FETCH.REQEST';
