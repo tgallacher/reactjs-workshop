@@ -36,8 +36,9 @@ import App from './components/01-App';
 // ✅    Your `App` component can include what ever you like, but must at least include the `DataTable` component we built during Exercise 03/02 and Exercise 04/01.
 //        This has already been imported into the module scope for you.
 // ✅    Your `App` component should accept 1 prop, called `consultantData`. The shape of this data can be seen in the `PropTypes` defintion at the bottom of the file.
+//        It is the same as used in Exercise 03/02 and Exercise 04/01.
 // ✅    Your `App` component should pass this data into our `DataTable` component.
-// ✅    You should "connect" your `App` component to the Redux store. The require redux API has already been imported for you; you just need to use it.
+// ✅    You should "connect" your `App` component to the Redux store. The required redux API has already been imported for you; you just need to use it.
 // ✅    You will need to tell Redux how to transform the data in the store into the prop required by your `App` component
 //
 //
