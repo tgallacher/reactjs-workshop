@@ -1,4 +1,4 @@
- /* eslint
+/* eslint
   react/destructuring-assignment: off,
   react/jsx-one-expression-per-line: off,
   react/prefer-stateless-function: off,
@@ -52,12 +52,13 @@ export const CONSULTANTS_FETCH_COMPLETE = 'CONSULTANTS.FETCH.COMPLETE';
 // Define our Action Creators. These are used
 // to signal that we want an update made to our store.
 export const fetchConsultantData = null;
+
 export const fetchConsultantComplete = null;
 
 // Setup our reducer
-export const reducer = function(prevState, action) {
-
-};
+export function reducer(prevState, action) {
+  // to be completed
+}
 
 // Create our store
 const store = null;
