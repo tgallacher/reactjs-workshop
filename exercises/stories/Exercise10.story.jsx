@@ -16,7 +16,7 @@ import CenterContent from '../CenterContent';
 import store, { fetchConsultantComplete } from '../09/01';
 import { rowData } from './Exercise04.story';
 import AppWrapper from '../10/01';
-import App, { mapStateToProps } from '../10/App';
+import App, { mapStateToProps } from '../10/components/01-App';
 
 // STOP!
 // =====
