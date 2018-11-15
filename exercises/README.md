@@ -31,10 +31,11 @@ Below is a summary of the exercises which have been created.
 - `01` - Active lists
 
 ### 09 - Redux Basics
-- `01` - Action Creators + Reducers'
+- `01` - Action Creators + Reducers
+- `02` - Combine reducers [TODO]
 
 ### 10 - React Redux + mapStateToProps
-- `01` -
+- `01` - Basics: wiring up our demo app
 
 ### 11 - Redux Selectors
 - `01` -
