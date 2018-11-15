@@ -32,21 +32,22 @@ import Exercise01 from '../04/01';
 storiesOf('Exercises/04', module)
   .add('01 - Lists: Towards the DataTableRow', renderExercise01);
 
+// Export as we will use it in a later exercise
+export const rowData = [ // eslint-disable-line
+  { team: 'Gryffindor', status: 'available', name: 'Harry potter', functions: ['Wizzard', 'Hero'], sources: ['Hogwarts'] },
+  { team: 'Gryffindor', status: 'available', name: 'Ron Weasley', functions: ['Wizzard', 'Side-kick'], sources: ['Hogwarts'] },
+  { team: 'Gryffindor', status: 'unavailable', name: 'Hermione Granger', functions: ['Wizzard'], sources: ['Hogwarts'] },
+  { team: 'Solo', status: 'busy', name: 'Bruce Wayne', functions: ['Hero', 'Villian'], sources: ['Gotham'] },
+  { team: 'Solo', status: 'unavailable', name: 'Richard Grayson', functions: ['Hero', 'Villian'], sources: ['Gotham'] },
+  { team: 'Amazon', status: 'busy', name: 'Diana', functions: ['Hero', 'Princess', 'Warrior'], sources: [] },
+  { team: undefined, status: 'busy', name: 'Joe Blogg', functions: [], sources: ['Generalist'] },
+  { team: 'People', status: 'available', name: undefined, functions: ['Professional'], sources: ['Hell\'s Kitchen'] },
+];
+
 //
 // Exercise 01
 //
 function renderExercise01() {
-  const rowData = [
-    { team: 'Gryffindor', status: 'available', name: 'Harry potter', functions: ['Wizzard', 'Hero'], sources: ['Hogwarts'] },
-    { team: 'Gryffindor', status: 'available', name: 'Ron Weasley', functions: ['Wizzard', 'Side-kick'], sources: ['Hogwarts'] },
-    { team: 'Gryffindor', status: 'unavailable', name: 'Hermione Granger', functions: ['Wizzard'], sources: ['Hogwarts'] },
-    { team: 'Solo', status: 'busy', name: 'Bruce Wayne', functions: ['Hero', 'Villian'], sources: ['Gotham'] },
-    { team: 'Solo', status: 'unavailable', name: 'Richard Grayson', functions: ['Hero', 'Villian'], sources: ['Gotham'] },
-    { team: 'Amazon', status: 'busy', name: 'Diana', functions: ['Hero', 'Princess', 'Warrior'], sources: [] },
-    { team: undefined, status: 'busy', name: 'Joe Blogg', functions: [], sources: ['Generalist'] },
-    { team: 'People', status: 'available', name: undefined, functions: ['Professional'], sources: ['Hell\'s Kitchen'] },
-  ];
-
   const component = <Exercise01 data={rowData} />;
   const story = (
     <CenterContent>
