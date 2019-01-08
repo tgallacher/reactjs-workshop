@@ -72,8 +72,8 @@ function renderExercise01() {
       const props = mapStateToProps(mockData);
 
       assert.hasAnyKeys(props, 'consultantData', 'Your selector should assign data to the `consultantData` prop key');
-      assert.deepEqual(props, mockData, 'Your selector should pull the correct data from the store');
-      assert.strictEqual(props, mockData, 'Your selector should pull the exact same data from the store');
+      assert.deepEqual(props.consultantData, mockData, 'Your selector should pull the correct data from the store');
+      assert.strictEqual(props.consultantData, mockData, 'Your selector should pull the exact same data from the store');
     });
 
     it('App: Connects it to the Redux store', () => {
