@@ -1,0 +1,2054 @@
+{
+  "consultants": {
+    "Jillian.Jaskolski": {
+      "username": "Jillian.Jaskolski",
+      "friendly_name": "Mike Marquardt",
+      "team": "Stan",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1531915616.798358
+    },
+    "Herminia.Torphy41": {
+      "username": "Herminia.Torphy41",
+      "friendly_name": "Daniella Hammes",
+      "team": "Max",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "dialler",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539772076.6354597
+    },
+    "Rasheed.Wolff80": {
+      "username": "Rasheed.Wolff80",
+      "friendly_name": "Thelma Skiles",
+      "team": "Lavinia",
+      "functions": [],
+      "sources": [
+        "direct_dial"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1525885508.9079597
+    },
+    "Libby.Moen1": {
+      "username": "Libby.Moen1",
+      "friendly_name": "Justen Hammes",
+      "team": "Yvette",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1529051451.504416
+    },
+    "Twila98": {
+      "username": "Twila98",
+      "friendly_name": "Rashawn Roberts",
+      "team": "Madalyn",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539762545.4312456
+    },
+    "Myrtle_Shields": {
+      "username": "Myrtle_Shields",
+      "friendly_name": "Modesto Hauck",
+      "team": "Lionel",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539859424.0125797
+    },
+    "Gaetano.Bartoletti": {
+      "username": "Gaetano.Bartoletti",
+      "friendly_name": "Vernice Daniel",
+      "team": "Zoey",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1538566393.0027068
+    },
+    "Mustafa_Boyle": {
+      "username": "Mustafa_Boyle",
+      "friendly_name": "Mrs. Meggie Denesik",
+      "team": "Laverna",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1525176589.1397028
+    },
+    "Carroll.Kerluke51": {
+      "username": "Carroll.Kerluke51",
+      "friendly_name": "Vada Jast",
+      "team": "Lavinia",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539687275.10229
+    },
+    "Freeda_Greenfelder12": {
+      "username": "Freeda_Greenfelder12",
+      "friendly_name": "Jadon Pfeffer",
+      "team": "Zoey",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1538644384.246873
+    },
+    "Rylee.Schoen": {
+      "username": "Rylee.Schoen",
+      "friendly_name": "Dr. Davonte Williamson",
+      "team": "Tabitha",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "dialler",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539849549.146732
+    },
+    "Kylie7": {
+      "username": "Kylie7",
+      "friendly_name": "Seamus Lind",
+      "team": "Flo",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1537974540.1652815
+    },
+    "Hans71": {
+      "username": "Hans71",
+      "friendly_name": "Ford Daugherty",
+      "team": "Lavinia",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1538985073.0796561
+    },
+    "Lesly7": {
+      "username": "Lesly7",
+      "friendly_name": "Donnell Ledner",
+      "team": "Josiah",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539854919.7127926
+    },
+    "Jonas.Ward": {
+      "username": "Jonas.Ward",
+      "friendly_name": "Reynold Reynolds",
+      "team": "August",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1538743223.3557558
+    },
+    "Florence_Mann2": {
+      "username": "Florence_Mann2",
+      "friendly_name": "Jason Gulgowski",
+      "team": "Reuben",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1534850043.0045817
+    },
+    "Emerald.Morar83": {
+      "username": "Emerald.Morar83",
+      "friendly_name": "Victor Ernser",
+      "team": "Therese",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1538736593.5779927
+    },
+    "Francesco.Ullrich27": {
+      "username": "Francesco.Ullrich27",
+      "friendly_name": "Ottis Toy",
+      "team": "Josiah",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879898.1860535
+    },
+    "Maritza_Schiller56": {
+      "username": "Maritza_Schiller56",
+      "friendly_name": "Dr. Freida Jones",
+      "team": "Madalyn",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1531836185.2455788
+    },
+    "Kenny_Russel": {
+      "username": "Kenny_Russel",
+      "friendly_name": "Helen Koelpin",
+      "team": "Stan",
+      "functions": [],
+      "sources": [],
+      "activity": "On Wrap",
+      "activity_changed_at": 1531840100.1737785
+    },
+    "Davon45": {
+      "username": "Davon45",
+      "friendly_name": "Aryanna Bruen",
+      "team": "Stan",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1531837865.6625607
+    },
+    "Korey_Pagac30": {
+      "username": "Korey_Pagac30",
+      "friendly_name": "Green Keeling",
+      "team": "Max",
+      "functions": [],
+      "sources": [
+        "direct_dial"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1533122507.5195386
+    },
+    "Reid_Tromp": {
+      "username": "Reid_Tromp",
+      "friendly_name": "Leon Gibson",
+      "team": "Lionel",
+      "functions": [],
+      "sources": [],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539691888.7343318
+    },
+    "Renee49": {
+      "username": "Renee49",
+      "friendly_name": "Flavio Braun",
+      "team": "Lavinia",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539332942.797836
+    },
+    "Giovanny_Klein44": {
+      "username": "Giovanny_Klein44",
+      "friendly_name": "Jessica Miller",
+      "team": "Flo",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1538043679.113709
+    },
+    "Estelle_Hermann": {
+      "username": "Estelle_Hermann",
+      "friendly_name": "Elian Sanford",
+      "team": "Olin",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Manual Dial",
+      "activity_changed_at": 1539879939.915006
+    },
+    "Tod37": {
+      "username": "Tod37",
+      "friendly_name": "Nash Denesik",
+      "team": "August",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539853263.801384
+    },
+    "Jonathon_Waters": {
+      "username": "Jonathon_Waters",
+      "friendly_name": "Tomas Padberg",
+      "team": "Laverna",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1535726981.7022598
+    },
+    "Sandra96": {
+      "username": "Sandra96",
+      "friendly_name": "Greyson Hegmann",
+      "team": "Koby",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1536746373.0105155
+    },
+    "Danial57": {
+      "username": "Danial57",
+      "friendly_name": "Hank Schaden",
+      "team": "Olin",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539676782.564223
+    },
+    "Margarita_Hirthe": {
+      "username": "Margarita_Hirthe",
+      "friendly_name": "Nora Hilpert",
+      "team": "Therese",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1536847967.1330545
+    },
+    "Saul.Bogisich20": {
+      "username": "Saul.Bogisich20",
+      "friendly_name": "Pattie Sanford",
+      "team": "Mozelle",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1537346445.146117
+    },
+    "Miracle1": {
+      "username": "Miracle1",
+      "friendly_name": "Jarvis Thiel",
+      "team": "Therese",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1537786989.1483066
+    },
+    "Courtney_Dooley": {
+      "username": "Courtney_Dooley",
+      "friendly_name": "Frederick Stamm IV",
+      "team": "Zoey",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539087166.5383449
+    },
+    "Abigayle24": {
+      "username": "Abigayle24",
+      "friendly_name": "Braulio Doyle",
+      "team": "Yvette",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539611347.8715136
+    },
+    "Nicole.Quitzon50": {
+      "username": "Nicole.Quitzon50",
+      "friendly_name": "Haskell Bailey",
+      "team": "Samara",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539763236.6741986
+    },
+    "Retha.Goyette": {
+      "username": "Retha.Goyette",
+      "friendly_name": "Adrien Lubowitz",
+      "team": "Lavinia",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1538727467.2661483
+    },
+    "Minnie_Runte79": {
+      "username": "Minnie_Runte79",
+      "friendly_name": "Stanton Heathcote",
+      "team": "Mozelle",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Training / Coaching",
+      "activity_changed_at": 1538727488.0615664
+    },
+    "Mylene11": {
+      "username": "Mylene11",
+      "friendly_name": "Mrs. Ralph Herzog",
+      "team": "Laverna",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539846064.254243
+    },
+    "Arvilla.Brekke": {
+      "username": "Arvilla.Brekke",
+      "friendly_name": "Eino Cummerata",
+      "team": "Lavinia",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539016391.9410641
+    },
+    "Enid.Hane10": {
+      "username": "Enid.Hane10",
+      "friendly_name": "Joelle Wisoky",
+      "team": "Trevor",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539849985.4819999
+    },
+    "Eduardo_Bruen": {
+      "username": "Eduardo_Bruen",
+      "friendly_name": "Landen Greenfelder",
+      "team": "Trevor",
+      "functions": [
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539078584.649956
+    },
+    "Gay45": {
+      "username": "Gay45",
+      "friendly_name": "Ole Mertz",
+      "team": "Josiah",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Training / Coaching",
+      "activity_changed_at": 1539595961.634974
+    },
+    "Richie55": {
+      "username": "Richie55",
+      "friendly_name": "Liana Schumm",
+      "team": "Max",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539771810.6128647
+    },
+    "Sigrid77": {
+      "username": "Sigrid77",
+      "friendly_name": "Stewart Waelchi",
+      "team": "August",
+      "functions": [
+        "Core",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539622881.9124882
+    },
+    "Earlene.Gerhold": {
+      "username": "Earlene.Gerhold",
+      "friendly_name": "Myrna Stanton",
+      "team": "Adella",
+      "functions": [
+        "Tech Support"
+      ],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539876243.8743806
+    },
+    "Jaeden_Kuphal18": {
+      "username": "Jaeden_Kuphal18",
+      "friendly_name": "Lora Murray",
+      "team": "Lionel",
+      "functions": [
+        "Admin",
+        "Quality Assurance"
+      ],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539873017.865747
+    },
+    "Otha_Lindgren78": {
+      "username": "Otha_Lindgren78",
+      "friendly_name": "Liana Mayert",
+      "team": "Adella",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879938.1635664
+    },
+    "Rebeka_Schinner10": {
+      "username": "Rebeka_Schinner10",
+      "friendly_name": "Jody Heller",
+      "team": "Stan",
+      "functions": [
+        "Tech Support"
+      ],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "Lunch",
+      "activity_changed_at": 1539694822.5354106
+    },
+    "Tamara88": {
+      "username": "Tamara88",
+      "friendly_name": "Bartholome Ondricka",
+      "team": "Trevor",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879949.5735743
+    },
+    "Darrel_McCullough": {
+      "username": "Darrel_McCullough",
+      "friendly_name": "Charlene Zieme",
+      "team": "Samara",
+      "functions": [
+        "Quality Assurance"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539781620.0888536
+    },
+    "Grayson.Cormier": {
+      "username": "Grayson.Cormier",
+      "friendly_name": "Vincent Hoeger",
+      "team": "Lionel",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539793086.1529047
+    },
+    "Eliza_Gleichner": {
+      "username": "Eliza_Gleichner",
+      "friendly_name": "Gilberto Bogisich",
+      "team": "Koby",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879503.7032602
+    },
+    "Alda.Bogisich": {
+      "username": "Alda.Bogisich",
+      "friendly_name": "Eldred Koelpin",
+      "team": "Laverna",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879948.9890394
+    },
+    "Aubree17": {
+      "username": "Aubree17",
+      "friendly_name": "Victoria Gleichner MD",
+      "team": "Madalyn",
+      "functions": [
+        "VIP New Business",
+        "VIP Qaulity Assurance"
+      ],
+      "sources": [
+        "consultant",
+        "dialler",
+        "phone"
+      ],
+      "activity": "Meeting",
+      "activity_changed_at": 1539879933.92522
+    },
+    "Gretchen30": {
+      "username": "Gretchen30",
+      "friendly_name": "Trystan Reynolds",
+      "team": "Samara",
+      "functions": [
+        "VIP New Business",
+        "VIP Qaulity Assurance"
+      ],
+      "sources": [
+        "consultant",
+        "dialler",
+        "phone"
+      ],
+      "activity": "Comfort Break",
+      "activity_changed_at": 1539879685.2505412
+    },
+    "Dock.Schuppe": {
+      "username": "Dock.Schuppe",
+      "friendly_name": "Miss Dena Crooks",
+      "team": "Yvette",
+      "functions": [
+        "Core",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879913.230669
+    },
+    "Destany_Flatley": {
+      "username": "Destany_Flatley",
+      "friendly_name": "Mr. Rickey Roberts",
+      "team": "Max",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879352.1097271
+    },
+    "Brenna.Rolfson19": {
+      "username": "Brenna.Rolfson19",
+      "friendly_name": "Kassandra Dibbert",
+      "team": "Zoey",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539878614.8988307
+    },
+    "Donnie.Johnson9": {
+      "username": "Donnie.Johnson9",
+      "friendly_name": "Karelle Schmidt",
+      "team": "Tabitha",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539879832.8370798
+    },
+    "Jadyn.Rau95": {
+      "username": "Jadyn.Rau95",
+      "friendly_name": "Arlie Schamberger",
+      "team": "Luna",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539878347.2007742
+    },
+    "Vella_Wilkinson54": {
+      "username": "Vella_Wilkinson54",
+      "friendly_name": "Mckenzie Schultz",
+      "team": "Luna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539879739.2077992
+    },
+    "Alvera.Lakin46": {
+      "username": "Alvera.Lakin46",
+      "friendly_name": "Catharine Strosin",
+      "team": "Luna",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879949.3011177
+    },
+    "Daisha_Okuneva": {
+      "username": "Daisha_Okuneva",
+      "friendly_name": "Fae McDermott",
+      "team": "Trevor",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539876012.6865737
+    },
+    "Aniya41": {
+      "username": "Aniya41",
+      "friendly_name": "Maggie Herman DVM",
+      "team": "Reuben",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879937.1428332
+    },
+    "Sheridan33": {
+      "username": "Sheridan33",
+      "friendly_name": "Devin Windler",
+      "team": "Luna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879904.6146116
+    },
+    "Maud.Prosacco16": {
+      "username": "Maud.Prosacco16",
+      "friendly_name": "Jamison Beer",
+      "team": "Zoey",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879898.1062384
+    },
+    "Alexandra41": {
+      "username": "Alexandra41",
+      "friendly_name": "Eleanora Ankunding",
+      "team": "Laverna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Training / Coaching",
+      "activity_changed_at": 1539877060.8289552
+    },
+    "Natasha.Von6": {
+      "username": "Natasha.Von6",
+      "friendly_name": "Abbigail King",
+      "team": "Trevor",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879949.2353296
+    },
+    "Darrick31": {
+      "username": "Darrick31",
+      "friendly_name": "Herbert Gaylord II",
+      "team": "Lionel",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879902.7386096
+    },
+    "Eileen.Pfannerstill": {
+      "username": "Eileen.Pfannerstill",
+      "friendly_name": "Luz Jerde",
+      "team": "Flo",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879880.1893373
+    },
+    "Morton72": {
+      "username": "Morton72",
+      "friendly_name": "Hassie Torp",
+      "team": "Reuben",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Manual Dial",
+      "activity_changed_at": 1539879120.5790114
+    },
+    "Daniela.Turcotte2": {
+      "username": "Daniela.Turcotte2",
+      "friendly_name": "Torrance Gaylord",
+      "team": "Beth",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879252.3036833
+    },
+    "Caleigh77": {
+      "username": "Caleigh77",
+      "friendly_name": "Gwendolyn Towne",
+      "team": "August",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879930.1206503
+    },
+    "Ron73": {
+      "username": "Ron73",
+      "friendly_name": "Rafael Conroy III",
+      "team": "Max",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879828.9157643
+    },
+    "Liam77": {
+      "username": "Liam77",
+      "friendly_name": "Zula Roberts II",
+      "team": "Max",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Training / Coaching",
+      "activity_changed_at": 1539879903.3645566
+    },
+    "Ollie42": {
+      "username": "Ollie42",
+      "friendly_name": "Winifred Abernathy",
+      "team": "Mozelle",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879949.7865117
+    },
+    "Vivianne_Mills": {
+      "username": "Vivianne_Mills",
+      "friendly_name": "Mr. Alf Muller",
+      "team": "Lavinia",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879658.216838
+    },
+    "Dallas.Douglas78": {
+      "username": "Dallas.Douglas78",
+      "friendly_name": "Bud Murphy MD",
+      "team": "Trevor",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879888.9456553
+    },
+    "Ronny9": {
+      "username": "Ronny9",
+      "friendly_name": "Lauretta Corkery",
+      "team": "Lavinia",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539879856.5277226
+    },
+    "Marshall_Stroman": {
+      "username": "Marshall_Stroman",
+      "friendly_name": "Vladimir McCullough",
+      "team": "Max",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879795.9579804
+    },
+    "Tony_Strosin": {
+      "username": "Tony_Strosin",
+      "friendly_name": "Leonie Okuneva II",
+      "team": "Max",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879710.3779995
+    },
+    "Magali.Auer": {
+      "username": "Magali.Auer",
+      "friendly_name": "Adelbert Kuhlman",
+      "team": "Stan",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879863.7206612
+    },
+    "Ted88": {
+      "username": "Ted88",
+      "friendly_name": "Afton Kunze",
+      "team": "Josiah",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879949.1391096
+    },
+    "Allan_McKenzie": {
+      "username": "Allan_McKenzie",
+      "friendly_name": "Verda Stracke",
+      "team": "Max",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879650.2796464
+    },
+    "Grant52": {
+      "username": "Grant52",
+      "friendly_name": "Sandra Nienow",
+      "team": "Adella",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879536.0182633
+    },
+    "Hank.Heidenreich": {
+      "username": "Hank.Heidenreich",
+      "friendly_name": "Guiseppe Funk",
+      "team": "Beth",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Meeting",
+      "activity_changed_at": 1539879869.6652875
+    },
+    "Seamus.OReilly44": {
+      "username": "Seamus.OReilly44",
+      "friendly_name": "Sadie Gibson",
+      "team": "Samara",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539879846.151789
+    },
+    "Madaline50": {
+      "username": "Madaline50",
+      "friendly_name": "Mr. Elvie Hansen",
+      "team": "Lionel",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879066.3482735
+    },
+    "Akeem.Nicolas48": {
+      "username": "Akeem.Nicolas48",
+      "friendly_name": "Maynard Torphy",
+      "team": "Tabitha",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879922.462211
+    },
+    "Clementina8": {
+      "username": "Clementina8",
+      "friendly_name": "Marianna Baumbach",
+      "team": "Samara",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539876505.1792207
+    },
+    "Luther.Volkman81": {
+      "username": "Luther.Volkman81",
+      "friendly_name": "Mrs. Asia Brekke",
+      "team": "Josiah",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879825.012847
+    },
+    "Cullen_Graham": {
+      "username": "Cullen_Graham",
+      "friendly_name": "Bridget Ratke",
+      "team": "Adella",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879926.242604
+    },
+    "Alejandrin_Sanford45": {
+      "username": "Alejandrin_Sanford45",
+      "friendly_name": "Mitchel Cartwright",
+      "team": "Koby",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Training / Coaching",
+      "activity_changed_at": 1539877670.9752448
+    },
+    "Lila_Hoeger31": {
+      "username": "Lila_Hoeger31",
+      "friendly_name": "Adaline Gutkowski",
+      "team": "Lionel",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879732.8035293
+    },
+    "Rigoberto.Kihn71": {
+      "username": "Rigoberto.Kihn71",
+      "friendly_name": "Jason Mayert",
+      "team": "Beth",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879406.218218
+    },
+    "Lourdes.Wyman": {
+      "username": "Lourdes.Wyman",
+      "friendly_name": "Jodie Nolan",
+      "team": "Zoey",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879698.9542835
+    },
+    "Braden42": {
+      "username": "Braden42",
+      "friendly_name": "Alene Sporer",
+      "team": "Josiah",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879437.2161577
+    },
+    "Yoshiko41": {
+      "username": "Yoshiko41",
+      "friendly_name": "Amalia Welch",
+      "team": "Mozelle",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Manual Dial",
+      "activity_changed_at": 1539879935.0955992
+    },
+    "Zaria.West63": {
+      "username": "Zaria.West63",
+      "friendly_name": "Caden Kemmer",
+      "team": "Luna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879666.4409986
+    },
+    "Beaulah11": {
+      "username": "Beaulah11",
+      "friendly_name": "Dr. Reyna Becker",
+      "team": "Luna",
+      "functions": [
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879782.3946154
+    },
+    "Frida19": {
+      "username": "Frida19",
+      "friendly_name": "Christopher Jaskolski",
+      "team": "Madalyn",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879822.397118
+    },
+    "Seth35": {
+      "username": "Seth35",
+      "friendly_name": "Crawford McLaughlin",
+      "team": "Reuben",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879774.256517
+    },
+    "Axel74": {
+      "username": "Axel74",
+      "friendly_name": "Estevan Goldner",
+      "team": "Tabitha",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879872.8024163
+    },
+    "Buster_Crist": {
+      "username": "Buster_Crist",
+      "friendly_name": "Kathryne Hessel",
+      "team": "Mozelle",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879677.8499374
+    },
+    "Tremaine36": {
+      "username": "Tremaine36",
+      "friendly_name": "Hailee Schamberger",
+      "team": "Olin",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879813.4735148
+    },
+    "Breanna_Littel75": {
+      "username": "Breanna_Littel75",
+      "friendly_name": "Raquel Konopelski",
+      "team": "Zoey",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539861229.4275625
+    },
+    "Archibald28": {
+      "username": "Archibald28",
+      "friendly_name": "Natalie Nader",
+      "team": "Adella",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879949.5359156
+    },
+    "Clifton_Sanford": {
+      "username": "Clifton_Sanford",
+      "friendly_name": "Davin Sawayn",
+      "team": "Olin",
+      "functions": [
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539877113.6348658
+    },
+    "Rebekah_Cummerata83": {
+      "username": "Rebekah_Cummerata83",
+      "friendly_name": "Pansy D'Amore III",
+      "team": "Tabitha",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879857.083263
+    },
+    "Wayne_Mueller": {
+      "username": "Wayne_Mueller",
+      "friendly_name": "Morton Feil",
+      "team": "August",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879949.456212
+    },
+    "Durward76": {
+      "username": "Durward76",
+      "friendly_name": "Ila Kilback",
+      "team": "Josiah",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879649.4172134
+    },
+    "Jo.Mills": {
+      "username": "Jo.Mills",
+      "friendly_name": "Glenda Walsh",
+      "team": "Josiah",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879924.1735044
+    },
+    "Danial.Mueller31": {
+      "username": "Danial.Mueller31",
+      "friendly_name": "Elenor Bruen",
+      "team": "Lavinia",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879060.797629
+    },
+    "Santos_Wisozk": {
+      "username": "Santos_Wisozk",
+      "friendly_name": "Justina Spinka",
+      "team": "Tabitha",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879813.5817966
+    },
+    "Ansley.Green41": {
+      "username": "Ansley.Green41",
+      "friendly_name": "Kariane Lueilwitz PhD",
+      "team": "Luna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879836.640539
+    },
+    "Michele94": {
+      "username": "Michele94",
+      "friendly_name": "Cale Kertzmann",
+      "team": "Lavinia",
+      "functions": [
+        "Core",
+        "Quality Assurance",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879904.9965243
+    },
+    "Selina61": {
+      "username": "Selina61",
+      "friendly_name": "Kim O'Keefe",
+      "team": "Max",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879425.6033893
+    },
+    "Thurman.Kshlerin": {
+      "username": "Thurman.Kshlerin",
+      "friendly_name": "Lynn Simonis",
+      "team": "Mozelle",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879915.591464
+    },
+    "Gerald.Prosacco8": {
+      "username": "Gerald.Prosacco8",
+      "friendly_name": "Ida Marvin V",
+      "team": "Yvette",
+      "functions": [
+        "Admin",
+        "Quality Assurance"
+      ],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "Manual Dial",
+      "activity_changed_at": 1539879005.660626
+    },
+    "Ryann_Heaney": {
+      "username": "Ryann_Heaney",
+      "friendly_name": "Carrie Feeney Sr.",
+      "team": "Josiah",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879846.4104562
+    },
+    "Terry_Ward": {
+      "username": "Terry_Ward",
+      "friendly_name": "Mrs. Chaz King",
+      "team": "Laverna",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539878216.676503
+    },
+    "Ari.Johnston49": {
+      "username": "Ari.Johnston49",
+      "friendly_name": "Tyshawn Rempel",
+      "team": "Flo",
+      "functions": [
+        "Tech Support"
+      ],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "Call Work",
+      "activity_changed_at": 1539877631.2909722
+    },
+    "Marianne_Vandervort26": {
+      "username": "Marianne_Vandervort26",
+      "friendly_name": "Ms. Vanessa Schneider",
+      "team": "Zoey",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879092.2476375
+    },
+    "Baylee_Feest": {
+      "username": "Baylee_Feest",
+      "friendly_name": "Rodrick Jacobi",
+      "team": "August",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539876952.138897
+    },
+    "Shad.Erdman": {
+      "username": "Shad.Erdman",
+      "friendly_name": "Genoveva O'Keefe",
+      "team": "Samara",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879906.2363667
+    },
+    "Guillermo_Jones": {
+      "username": "Guillermo_Jones",
+      "friendly_name": "Bette Bartoletti PhD",
+      "team": "Trevor",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879788.003004
+    },
+    "Lina_Turner35": {
+      "username": "Lina_Turner35",
+      "friendly_name": "Johanna Kuhn",
+      "team": "Beth",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879871.2165592
+    },
+    "Axel94": {
+      "username": "Axel94",
+      "friendly_name": "Marianne Walker",
+      "team": "Zoey",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879870.3004777
+    },
+    "Tessie_Schowalter": {
+      "username": "Tessie_Schowalter",
+      "friendly_name": "Elaina Legros",
+      "team": "Zoey",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879224.1161
+    },
+    "Jamie_Aufderhar": {
+      "username": "Jamie_Aufderhar",
+      "friendly_name": "Melody Champlin",
+      "team": "Luna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879681.3738155
+    },
+    "Hector_Shields": {
+      "username": "Hector_Shields",
+      "friendly_name": "Mrs. Columbus Treutel",
+      "team": "August",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879558.6070485
+    },
+    "Arnoldo.Leuschke": {
+      "username": "Arnoldo.Leuschke",
+      "friendly_name": "Johnson Huel",
+      "team": "Beth",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539864605.3973851
+    },
+    "Clarissa_Hessel": {
+      "username": "Clarissa_Hessel",
+      "friendly_name": "Fern Macejkovic",
+      "team": "Luna",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879937.0135794
+    },
+    "Ila_Bruen": {
+      "username": "Ila_Bruen",
+      "friendly_name": "Jasen Roob",
+      "team": "Stan",
+      "functions": [
+        "Core"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "Training / Coaching",
+      "activity_changed_at": 1539876102.926674
+    },
+    "Cade.Wisozk67": {
+      "username": "Cade.Wisozk67",
+      "friendly_name": "Ms. Demetrius Balistreri",
+      "team": "Mozelle",
+      "functions": [
+        "Core",
+        "Sales"
+      ],
+      "sources": [
+        "consultant",
+        "dialler"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879348.8077438
+    },
+    "Judah77": {
+      "username": "Judah77",
+      "friendly_name": "Kris Olson",
+      "team": "Tabitha",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Call",
+      "activity_changed_at": 1539879658.0160782
+    },
+    "Lesly_Schmeler88": {
+      "username": "Lesly_Schmeler88",
+      "friendly_name": "Alayna Halvorson",
+      "team": "Mozelle",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Comfort Break",
+      "activity_changed_at": 1539879881.2667704
+    },
+    "Lacey.Simonis": {
+      "username": "Lacey.Simonis",
+      "friendly_name": "Hazel Rolfson",
+      "team": "Therese",
+      "functions": [
+        "Tech Support"
+      ],
+      "sources": [
+        "consultant",
+        "direct_dial",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539868615.210043
+    },
+    "Anderson_Daniel": {
+      "username": "Anderson_Daniel",
+      "friendly_name": "Royce Langosh",
+      "team": "Lavinia",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879779.2949862
+    },
+    "Fermin_Stamm0": {
+      "username": "Fermin_Stamm0",
+      "friendly_name": "Corbin Greenfelder Sr.",
+      "team": "Max",
+      "functions": [
+        "VIP New Business",
+        "VIP Qaulity Assurance"
+      ],
+      "sources": [
+        "consultant",
+        "dialler",
+        "phone"
+      ],
+      "activity": "Break",
+      "activity_changed_at": 1539879528.6651847
+    },
+    "Esther39": {
+      "username": "Esther39",
+      "friendly_name": "Xzavier Grady",
+      "team": "Olin",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Ready",
+      "activity_changed_at": 1539879660.3920443
+    },
+    "Evelyn7": {
+      "username": "Evelyn7",
+      "friendly_name": "Carolanne Balistreri",
+      "team": "Trevor",
+      "functions": [],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539874968.2520905
+    },
+    "Anissa_Koch": {
+      "username": "Anissa_Koch",
+      "friendly_name": "Jaqueline Gutmann",
+      "team": "Tabitha",
+      "functions": [
+        "Quality Assurance",
+        "Sales",
+        "Service"
+      ],
+      "sources": [
+        "consultant",
+        "phone"
+      ],
+      "activity": "On Wrap",
+      "activity_changed_at": 1539879761.4570858
+    },
+    "Rhianna90": {
+      "username": "Rhianna90",
+      "friendly_name": "Kody Hamill",
+      "team": "Samara",
+      "functions": [],
+      "sources": [],
+      "activity": "Gone Home",
+      "activity_changed_at": 1539878793.2144775
+    }
+  }
+}
