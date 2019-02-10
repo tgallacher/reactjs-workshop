@@ -3,7 +3,7 @@ import React from 'react';
 import DataTableRow from './DataTableRow';
 
 const DataTableHeading = ({
-  consultantNameHeader = 'Consultant',
+  consultantNameHeader = 'Member',
   teamHeader = 'Team',
   functionsHeader = 'Function(s)',
   sourcesHeader = 'Source(s)',

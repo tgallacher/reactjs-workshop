@@ -11,7 +11,7 @@ const AppBar = () => (
   <Header className="bg-white font-sans">
     <ContentWrapper className="flex max-w-4xl mx-auto h-10 items-center">
       <PageHeadingArea className="flex-1 text-grey-darker text-xl">
-        Team Status Summary
+        Team Summary
       </PageHeadingArea>
 
       <LogoutArea>
