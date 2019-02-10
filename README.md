@@ -14,6 +14,7 @@ A 3 day hands-on workshop, learning ReactJS and Redux by building an example sin
   - [With Docker](#with-docker)
   - [Without Docker](#without-docker)
 - [Exercises](#exercises)
+- [License](#license)
 
 <!-- /TOC -->
 
@@ -114,3 +115,6 @@ To `kill` the local sandbox, simply `Ctrl+C` in each terminal window to stop the
 ## Exercises
 
 All exercises are located in the [./exercises](./exercises) folder, and summaries in the [Exerciese README](./exercises) file.
+
+## License
+This material is available for private, non commercial use under the [GPL version 3.0 license](./LICENSE). If you would like to use this material to run your own workshop then please contact me.
