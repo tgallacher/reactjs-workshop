@@ -9,6 +9,7 @@ A 3 day hands-on workshop, learning ReactJS and Redux by building an example sin
 **Table of Contents**
 <!-- TOC depthFrom:2 depthTo:3 -->
 
+- [Introduction](#introduction)
 - [Getting Started](#getting-started)
   - [With Docker](#with-docker)
   - [Without Docker](#without-docker)
@@ -16,7 +17,7 @@ A 3 day hands-on workshop, learning ReactJS and Redux by building an example sin
 
 <!-- /TOC -->
 
-# Introduction
+## Introduction
 This repo forms part of a hands on workshop (TODO: link to slides) designed to teach [ReactJS](https://reactjs.org) and its ecosystem. Throughout the 3-day workshop, we will learn by doing: We will build a fake SPA, and will cover key concepts as we progress through the app build.
 
 The workshop starts all the way from the beginner -- with little ReactJS knowledge -- to all the way on the other side of the spectrum, covering advanced ReactJS component patterns; css-in-js using EmotionJS; predictable state management with [Redux](https://redux.js.org/); and to handling asynchronous side effects via [Redux Sagas](https://redux-saga.js.org/).
