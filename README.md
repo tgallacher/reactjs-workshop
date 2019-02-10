@@ -1,7 +1,7 @@
 # ReactJS Workshop
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square&logo=Github)](http://makeapullrequest.com)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/tgallacher/reactjs-workshop/graphs/commit-activity)
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/tgallacher/reactjs-workshop/blob/master/LICENSE)
 
 
 A 3 day hands-on workshop, learning ReactJS and Redux by building an example single page application (SPA).
