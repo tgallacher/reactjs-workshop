@@ -10,7 +10,7 @@ import { storiesOf } from '@storybook/react';
 import { specs, describe, it } from 'storybook-addon-specifications';
 import { beforeEach } from 'storybook-addon-specifications/dist/preview';
 import { assert } from 'chai';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 import DataRow from '../03/02';
 
@@ -58,7 +58,7 @@ function renderExercise01() {
     let wrapper;
 
     beforeEach(() => {
-      wrapper = mount(component);
+      wrapper = shallow(component);
     });
 
     // Attendees are free to chose their own implementation approach using EmotionJS API
