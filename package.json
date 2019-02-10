@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "cross-env NODE_ENV=production build-storybook --config-dir ./.storybook",
-    "storybook:dev": "cross-env NODE_ENV=development start-storybook --config-dir ./.storybook -p 6006",
+    "start": "cross-env NODE_ENV=development start-storybook --config-dir ./.storybook -p 6006",
+    "server": "json-server --read-only db.json",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.js",
-    "server:dev": "json-server --read-only db.json",
     "build:dev": "cross-env NODE_ENV=development webpack --config ./webpack.dev.js",
     "lint": "eslint --ext .js --ext .jsx --config ./.eslintrc.js --ignore-pattern /node_modules/ ."
   },

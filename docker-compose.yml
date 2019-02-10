@@ -10,7 +10,7 @@ services:
         source: .
         target: /home/node/app
     working_dir: /home/node/app
-    command: "npm install"
+    command: "npm ci"
 
   frontend:
     image: node:10
@@ -24,7 +24,7 @@ services:
     ports:
       - "6006:6006"
     working_dir: /home/node/app
-    command: "npm run-script storybook:dev -- --ci --quiet"
+    command: "npm run-script start -- --ci --quiet"
     links:
       - "backend"
 
@@ -40,7 +40,7 @@ services:
         source: .
         target: /home/node/app
     working_dir: /home/node/app
-    command: "npm run-script server:dev -- --quiet --host 0.0.0.0"
+    command: "npm run-script server -- --quiet --host 0.0.0.0"
 
   app:
     # Don't actually use anything here; just bootstrap required services.

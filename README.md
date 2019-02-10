@@ -70,13 +70,13 @@ The sandbox app is used for both reviewing and editing the demo app, as well as 
 > **Note:** Each of these will consume a terminal window, so you will need more than 1 terminal window!
 
 ```sh
-npm run server:dev
+npm run server
 ```
 
 and in a separate terminal,
 
 ```sh
-npm run storybook:dev
+npm start
 ```
 
 To `kill` the local sandbox, simply `Ctrl+C` in each terminal window to stop the active process.
@@ -98,13 +98,13 @@ The sandbox app is used for both reviewing and editing the demo app, as well as 
 > **Note:** Each of these will consume a terminal window, so you will need more than 1 terminal window!
 
 ```sh
-yarn server:dev
+yarn server
 ```
 
 and in a separate terminal,
 
 ```sh
-yarn storybook:dev
+yarn start
 ```
 
 To `kill` the local sandbox, simply `Ctrl+C` in each terminal window to stop the active process.
