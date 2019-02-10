@@ -52,8 +52,17 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // 🐨  The Row.propTypes (below) can be useful to summary the expected shape of your props
 class Row extends React.Component {
   render() {
+    const { className } = this.props;
+    const css = ['flex', 'w-full'];
+
+    if (className) {
+      css.push(className);
+    }
+
     return (
-      <div className="flex w-full">
+      // Note, there is a performance penalty using `.join()` inline,
+      // but it's ok for our demo app.
+      <div className={css.join(' ')}>
         Start HERE!
       </div>
     );
@@ -62,6 +71,7 @@ class Row extends React.Component {
 
 // Add runtime prop validation
 Row.propTypes = {
+  className: PropTypes.string,
   functions: PropTypes.arrayOf(PropTypes.string),
   sources: PropTypes.arrayOf(PropTypes.string),
   status: PropTypes.string,
