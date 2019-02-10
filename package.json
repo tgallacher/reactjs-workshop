@@ -2,6 +2,7 @@
   "name": "reactjs-workshop",
   "version": "0.1.0",
   "description": "ReactJS Training: zero to hero",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,8 +18,8 @@
     "url": "git+https://github.com/tgallacher/reactjs-workshop.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tom Gallacher <tgallacher@users.noreply.github.com>",
+  "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/tgallacher/reactjs-workshop/issues"
   },
