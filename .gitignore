@@ -64,3 +64,6 @@ typings/
 
 dist
 _solutions
+
+# Tmp files
+tmp-working-files
