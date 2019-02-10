@@ -16,10 +16,10 @@ import PropTypes from 'prop-types';
 // We will take a short diversion here and explore "HOCs", or Higher-Order-Components.
 // While the demo app doesn't define any HOCs directly, HOCs are one of the foundational advanced
 // concepts in ReactJS, and can help abstract cross-cutting concerns across several components.
-// They are also one of ReactJS powerhouse features: Composability.
+// They also showcase one of ReactJS' powerhouse features: composability.
 //
-// Although, while we won't define any inside the demo app, we will be using -- arguably the most
-// popular -- one heavily when we explore Redux.
+// Although, while we won't define any inside the demo app, we will be using one -- arguably the most
+// popular -- heavily when we explore Redux.
 //
 // Tasks
 // --------
