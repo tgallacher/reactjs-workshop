@@ -47,6 +47,9 @@ import List from './components/01-ListComponent';
 // 🐨   Use the `React.createContext` method to create your context components
 // 🐨   You should ensure you export / import all the components you need across all file/component modules!
 // 🐨   Don't forget to update each component's `propTypes` definition as you modify the props they support/require!
+
+export const ActiveContext = {};
+
 class App extends React.Component {
   static propTypes = {
     teamNames: PropTypes.arrayOf(PropTypes.string).isRequired,
