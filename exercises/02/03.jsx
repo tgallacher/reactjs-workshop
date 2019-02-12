@@ -25,7 +25,6 @@ import PropTypes from 'prop-types';
 // ✅    Your component's state object should contain a 'timestamp' node
 // ✅    Your component's state object should initialise the 'timestamp' node to either
 //        the `datetimestamp` prop, or a `now` data object.
-// ✅    Your component should render an input DOM element to accept text input from the user
 // ✅    Your component should re-render the time display after every second
 //
 // Tips
