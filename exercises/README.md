@@ -1,6 +1,8 @@
 # ReactJS Workshop: Exercises
 
-Below is a summary of the exercises which have been created.
+Below is a summary of the exercises which we will run through as part of the workshop.
+
+## Day 1
 
 ### 01 - ReactJS Elements, Components & Props
 - `01` - React Element, Components & props basics
@@ -18,8 +20,10 @@ Below is a summary of the exercises which have been created.
 ### 04 - Lists & Keys
 - `01` - Lists: building the Data table
 
-### 05 - CSS-in-JSS
-- `01` - Styling the data table rows
+## Day 2
+
+### 05 - CSS-in-JSS (*optional extra*)
+- `01` - Dynamically styling components
 
 ### 06 - HOCs
 - `01` - onMouseMove
@@ -29,6 +33,8 @@ Below is a summary of the exercises which have been created.
 
 ### 08 - Context API
 - `01` - Active lists
+
+## Day 3
 
 ### 09 - Redux Basics
 - `01` - Action Creators + Reducers

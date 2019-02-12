@@ -56,7 +56,7 @@ function StatusBlock(props) {
   );
 }
 
-// Add runtime type checking for our component props
+// Add type checking for our component props
 StatusBlock.propTypes = {
   status: PropTypes.string.isRequired,
   stat: PropTypes.number.isRequired,

@@ -16,8 +16,8 @@ import DataRow from '../03/02';
 // Exercise 05/01
 // ===========
 //
-// Continuing to build on the last exercise, we will begin think about styling our data rows,
-// with the aim of linking the consultant status attribute to the styling of the row.
+// Continuing to build on the last exercise, we will begin to think about styling our data rows,
+// with the aim of linking the team member status attribute to the styling of the row, i.e. its background colour.
 //
 // We will need to COPY our solution from "Exercise 04/01". In this exercise we will wrap each
 // row within a "Wrapper" container, which will contain our dynamic styling. We will use EmotionJS
@@ -26,13 +26,13 @@ import DataRow from '../03/02';
 // Tasks
 // --------
 // ✅    Your component should behave exactly as it did in the last exercise
-// ✅    Your component should style each row according to the current value of the `status` prop. Looking below at PropTypes,
+// ✅    Your component should style each row (`DataRow` component) according to the current value of the `status` prop. Looking below at PropTypes,
 //        this prop can be 1 of 3 possible values (when defined): `available` | `unavailable` | `busy`.
 //        The following status COLORS should be used:
 //        available     => #008744
 //        unavailable   => #D75400
 //        busy          => #90479B
-// ✅    Each row wrapper should add the following style attributes, and accent them with the above colors based on the `status` prop:
+// ✅    Each row should be wrapped by a `<div>` element; this wrapper element should add the following style attributes, and accent them with the above colors based on the `status` prop:
 //        bacground-color with an opacity of 0.15
 //        border-bottom with an border width of 2px
 //        border-left with an border width of 4px
@@ -61,7 +61,7 @@ class StyledDataTable extends React.Component {
   }
 }
 
-// Add runtime prop validation
+// Add prop validation
 StyledDataTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     functions: PropTypes.arrayOf(PropTypes.string),

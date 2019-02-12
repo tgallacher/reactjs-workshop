@@ -29,7 +29,7 @@ import { createStore } from 'redux';
 //        The action should include the error within the payload object on `data` when one is passed.
 //
 // ✅    Unless instructed otherwise, All actions should default their unused object keys to null when they don't have any data.
-// ✅    You All actions should adhere to the FSA object structure.
+// ✅    All actions should adhere to the FSA [1] object structure.
 //
 // ✅    Complete the `reducer` using the stub below.
 // ✅    Your reducer should return the default store state when `prevState` is undefined.
@@ -38,12 +38,14 @@ import { createStore } from 'redux';
 // ✅    The reducer should return the previous state if any other action is dispatched
 //
 // ✅    Create a single store for our 'app' using the `createStore` method (already imported above)
-// ✅    The store should be created without a `preloaded state` (only call with 1 arg)
+// ✅    The store should be created without a `preloaded state`, preloadedState (only call with 1 arg) [2]
 // ✅    The store should be configured to use our reducer we created in the above tasks.
 //
 // Tips
 // --------
 // 🐨    Remember, FSA stands for "Flux Standard Action"
+// 🐨   [1] https://github.com/redux-utilities/flux-standard-action#actions
+// 🐨   [2] https://redux.js.org/api/createstore#createstorereducer-preloadedstate-enhancer
 
 // Define our Action type constants
 export const CONSULTANTS_FETCH_REQUEST = 'CONSULTANTS.FETCH.REQEST';

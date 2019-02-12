@@ -14,8 +14,12 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // ===========
 //
 // This exercise extends the previous exercise, where will add a few more columns in
-// our `Row` component. While the tasks might seem the exactly the same as before,
+// our `Row` component. While the tasks might seem exactly the same as before,
 // keep a close eye as there have been some tweaks to the requirements.
+//
+// NOTE:
+// You should copy your solution from exercise 03/01 as the starting point for this exercise, as it
+// will save you some time.
 //
 // Tasks
 // --------
@@ -49,7 +53,7 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // ------
 // 🐨  The array helper, `Array.isArray` could prove useful here
 // 🐨  Remember, `undefined` is a special object in JS, which you can use to 'short-circuit' some expressions
-// 🐨  The Row.propTypes (below) can be useful to summary the expected shape of your props
+// 🐨  The Row.propTypes (below) is a useful insight into the expected shape of your props
 class Row extends React.Component {
   render() {
     const { className } = this.props;
@@ -69,7 +73,7 @@ class Row extends React.Component {
   }
 }
 
-// Add runtime prop validation
+// Add prop validation
 Row.propTypes = {
   className: PropTypes.string,
   functions: PropTypes.arrayOf(PropTypes.string),

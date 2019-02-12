@@ -29,11 +29,13 @@ import PropTypes from 'prop-types';
 //
 // Tips
 // ------
-// 🐨  Use JS Date object for accessing current time, e.g. `new Date()`.
-// 🐨  Use the JS Date object's `.toLocaleTimeString()` function for displaying human timestamp inside your `render()` method
+// 🐨  Use JS `Date` [1] object for accessing current time, e.g. `new Date()`.
+// 🐨  Use the JS Date object's `.toLocaleTimeString()` function for displaying a human-readable timestamp inside your `render()` method
 // 🐨  Don't forget to clear your intervals!!! (e.g. `clearInterval(id)`)
 // 🐨  You can initialise state and class properties using any of the valid syntax options; this project is setup
 //     to support "all" of the currently popular appraoches.
+//
+// [1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 class Timer extends React.Component {
   render() {
     return (
@@ -44,7 +46,7 @@ class Timer extends React.Component {
   }
 }
 
-// Add runtime prop validation
+// Add prop validation
 Timer.propTypes = {
   datetimestamp: PropTypes.number,
 };

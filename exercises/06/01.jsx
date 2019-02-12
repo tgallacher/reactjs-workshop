@@ -14,12 +14,15 @@ import PropTypes from 'prop-types';
 // ===========
 //
 // We will take a short diversion here and explore "HOCs", or Higher-Order-Components.
-// While the demo app doesn't define any HOCs directly, HOCs are one of the foundational advanced
+// While the demo app doesn't define any HOCs directly, HOCs have been one of the foundations of advanced
 // concepts in ReactJS, and can help abstract cross-cutting concerns across several components.
 // They also showcase one of ReactJS' powerhouse features: composability.
 //
-// Although, while we won't define any inside the demo app, we will be using one -- arguably the most
+// As we mentioned above, while we won't define any inside the demo app, we will be using one -- arguably the most
 // popular -- heavily when we explore Redux.
+//
+// GOAL
+// Once completed, we will be able to display the current mouse position on the screen; and have it update in real time.
 //
 // Tasks
 // --------
@@ -49,7 +52,7 @@ export class App extends React.Component {
   }
 }
 
-// Add runtime prop validation
+// Add prop validation
 App.propTypes = {
   mouse: PropTypes.shape({
     x: PropTypes.number.isRequired,

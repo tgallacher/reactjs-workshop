@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 // Exercise 07/01
 // ===========
 //
-// Now let's look at an alternative component pattern which can also be used to cross-cut concerns
+// We'll now look at an alternative component pattern which can also be used to cross-cut concerns
 // between child components, namely the "Render Prop" pattern. While the demo app doesn't currently
 // define any Render Props directly, the Render Prop pattern is one of the most important patterns
 // which is in use today for abstracting and reusing component state/logic.
@@ -45,10 +45,11 @@ export class MousePosition extends React.Component {
   }
 }
 
-// Define display name so we can select in our tests
+// Define display name so we can select in our tests.
+// ReactJS does this for us, but to safeguard possible class renames so that our tests keep working.
 MousePosition.displayName = 'MousePosition';
 
-// Add runtime prop validation
+// Add prop validation
 MousePosition.propTypes = {
   children: PropTypes.func,
 };
@@ -63,8 +64,7 @@ class App extends React.Component {
   }
 }
 
-// Add runtime prop validation
+// Add prop validation
 App.propTypes = {};
 
 export default App;
-

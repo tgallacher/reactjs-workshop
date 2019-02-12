@@ -24,18 +24,22 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // We will be using an imported component to help us with rendering; see the `DataColumn` import
 // statement at the top of this file.
 //
+// Notes on the <DataRowColumn />
+// ------------------------------
+//  1. For this exercise, all we need to know is that the DataRowColumn component expects data to be given by way of its `children` props.
+//
 // Tasks
 // --------
-// ✅    Your component should accept a `team` prop, with type `string`
+// ✅    Your component should accept a `team` prop, which will have the type `string`
 // ✅    Your component should render the `team` prop inside its own `DataColumn` component
-// ✅    This `DataColumn` component should be given an `id` attribute, with the value `team`
-// ✅    Your component should render the `team` prop if provided, and `Unknown Team` if absent
+// ✅    This `DataColumn` component should be given an `id` attribute whose value is the string `team`
+// ✅    Your component should render the `team` prop if provided, and the string `Unknown Team` if absent
 //
 // ✅    Your component should accept a `functions` prop, with type `string[]` (Array of strings)
 // ✅    Your component should render the `funtions` prop inside its own `DataColumn` component, as a comma+space separated list
-//        e.g. `foo, bar, baz` [no trailing comma]
-// ✅    This `DataColumn` component should be given an `id` attribute, with the value `functions`
-// ✅    Your component should render the `funtions` prop if provided, and the string `-` if absent, or the array is empty
+//        e.g. "foo, bar, baz" (no trailing comma)
+// ✅    This `DataColumn` component should be given an `id` attribute whose value is the string, `functions`
+// ✅    Your component should render the `funtions` prop if provided, and the string `-` if either the prop is absent or is an empty array
 //
 // ✅    Your component should render nothing if both `functions` and `team` props are missing
 //
@@ -45,6 +49,7 @@ import DataColumn from 'scenes/components/DataTable/DataTableRow/DataRowColumn';
 // ------
 // 🐨  The array helper, `Array.isArray` could prove useful here
 // 🐨  Remember, `undefined` is a special object in JS, which you can use to 'short-circuit' some expressions
+// 🐨  The specific requirement for the `id` attributes above, are purely to simplify the test implementation.
 class Row extends React.Component {
   render() {
     return (
@@ -55,7 +60,7 @@ class Row extends React.Component {
   }
 }
 
-// Add runtime prop validation
+// Add prop validation
 Row.propTypes = {
   team: PropTypes.string,
   functions: PropTypes.arrayOf(PropTypes.string),

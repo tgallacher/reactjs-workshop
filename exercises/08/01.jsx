@@ -18,7 +18,7 @@ import List from './components/01-ListComponent';
 //
 // React's context API is a powerful tool in our bag of tricks for abstracting and sharing state across our components.
 // The context API also provides a streamlined mechanism for sharing this state across a deep DOM tree, without redundant
-// prop/concern "leaks". Although, caution should be taken -- as discussed during the presentation -- that while powerful,
+// prop/concern "leaks". Although, caution should be taken -- as discussed during the presentation -- while powerful,
 // the context API can limit the composability of components, and so other options should be weighed first in order to choose
 // the right tool of the job.
 //
@@ -26,6 +26,10 @@ import List from './components/01-ListComponent';
 // with one of the items in the list being considered and highlighted as the "active" item. The styling of this item will
 // differ from the rest. We also include functionality so that we can change which item is active by clicking on the desired
 // item. Here, we will explore how the context API can significantly simplify our component architecture.
+//
+// NOTES
+// =====
+// Here some components have been artifically split (see the `./components` folder) in order to highlight the power offered by the Context API.
 //
 // Tasks
 // --------
@@ -35,7 +39,7 @@ import List from './components/01-ListComponent';
 //        (newActiveIndex: number) => void
 // ✅    Your context provider should default the `activeIndex` to 0.
 // ✅    Your context provider should default the `handleUpdateIndex` to an empty function, that when called does nothing.
-// ✅    You should assign the context to a variable called `ActiveContext` (so the tests work)
+// ✅    You should assign the context to the variable `ActiveContext` below (so the tests work)
 // ✅    The `List` component should only accept 1 prop, the `values` prop, which contains the team names (type: string[])
 // ✅    The `ListItem` component should accept 2 props, the `value` prop and the `index` prop
 //        The `value` prop is the team name that the ListItem should render; its type is: string
