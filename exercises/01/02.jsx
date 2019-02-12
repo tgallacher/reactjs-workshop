@@ -34,6 +34,10 @@ import PropTypes from 'prop-types';
 // `Wrapper`          Should be given a `colorClassName` prop
 // `Stat`             Should be given the `stat` as a `children` prop; this accepts no other properties
 //
+// The following components are designed to be "parent" elements:
+// 1. `Wrapper` is the outermost component
+// 2. `StatusContainer` wraps the `Status*` components
+//
 // Tip
 // ------
 // 🐨  The imported components should be sufficiently semantic in their naming
