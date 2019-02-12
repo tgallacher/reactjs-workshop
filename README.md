@@ -113,6 +113,7 @@ To `kill` the local sandbox, simply `Ctrl+C` in each terminal window to stop the
 </details>
 
 ## Exercises
+> NOTE: When working on the solutions, **DO NOT** delete any of your work; each exercise builds on the previous solution and so you will need your solutions from prior exercises as you progress.
 
 All exercises are located in the [./exercises](./exercises) folder, and summaries in the [Exerciese README](./exercises) file.
 
